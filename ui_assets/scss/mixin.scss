@@ -1,29 +1,44 @@
 // Colors
 
-$blue:       #36c;
-$white:             #fff;
+$blue: #36c;
+$white: #fff;
 $gray-featherlight: #ececec;
-$gray-applelight:   #f1f1f1;
-$gray-superlight:   #fcfcfc;
-$gray-lightest:     #ddd;
-$gray-lighter:      #ccc;
-$gray-light:        #777;
-$gray:              #555;
-$gray-dark:         #333;
-$black:             #000;
+$gray-applelight: #f1f1f1;
+$gray-superlight: #fcfcfc;
+$gray-lightest: #ddd;
+$gray-lighter: #ccc;
+$gray-light: #777;
+$gray: #555;
+$gray-dark: #333;
+$black: #000;
 
-$red:               #9d261d;
-$red-live:          #EA2429;
-$yellow:            #ffc40d;
+$red: #9d261d;
+$red-live: #ea2429;
+$yellow: #ffc40d;
 
-$facebook:          #46609F;
-$twitter:           #1da1f2;
-$google:            #EEF0F2;
-$whatsapp:			    #128C7E;
-
+$facebook: #46609f;
+$twitter: #1da1f2;
+$google: #eef0f2;
+$whatsapp: #128c7e;
 
 // Fonts
 
 @mixin Roboto() {
-    font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+@mixin Sans() {
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@mixin Serif() {
+	font-family: "Droid Serif", serif;
+}
+
+@mixin NotoSans() {
+	font-family: "Noto Sans", "Droid Sans", Helvetica, sans-serif;
+}
+
+@mixin NotoSerif() {
+	font-family: "Noto Serif", "Droid Serif", serif;
 }
