@@ -1,0 +1,28 @@
+.main-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 30px;
+	.brand-logo-container {
+		margin-right: auto;
+		a {
+			text-decoration: none;
+		}
+		.brand-logo-icon {
+			background-position: -23px -176px;
+			width: 60px;
+			height: 31px;
+		}
+	}
+	.theme-toggle-container {
+		margin-left: auto;
+	}
+}
+
+// Tablet media
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+// Mobile media
+@media (max-width: 767px) {
+}

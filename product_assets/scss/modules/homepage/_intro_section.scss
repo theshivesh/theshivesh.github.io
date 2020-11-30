@@ -1,0 +1,95 @@
+@import "../common/mixin.scss";
+.intro-section {
+	display: flex;
+	flex-direction: column;
+	max-width: 980px;
+	margin: 0 auto;
+	height: 90vh;
+	&.about-page {
+		position: relative;
+		margin-bottom: 50px;
+		h1 {
+			margin-bottom: 0;
+		}
+		p {
+			margin: 0;
+		}
+		.in-body-navigation {
+			margin-top: 80px;
+		}
+	}
+	h1 {
+		font-size: 90px;
+		line-height: 98px;
+		font-weight: bold;
+		margin: 40px 0 40px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.in-body-navigation {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0;
+		li {
+			list-style: none;
+			margin: 0;
+			line-height: initial;
+			margin-right: 30px;
+			&.active {
+				a {
+					background-color: $blue;
+					opacity: 1;
+					padding: 16px 30px 12px;
+					font-weight: 600;
+				}
+			}
+			a {
+				box-shadow: none;
+				background: transparent;
+				border-radius: 999px;
+				opacity: 0.7;
+				padding: 16px 15px 12px;
+				font-size: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+				width: max-content;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.intro-section {
+		max-width: initial;
+		padding: 0 30px;
+		h1 {
+			font-size: 60px;
+			line-height: 72px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.intro-section {
+		max-width: initial;
+		padding: 0 30px;
+		h1 {
+			font-size: 40px;
+			line-height: 52px;
+		}
+		.in-body-navigation {
+			margin-top: 80px;
+			li {
+				margin-right: 20px;
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

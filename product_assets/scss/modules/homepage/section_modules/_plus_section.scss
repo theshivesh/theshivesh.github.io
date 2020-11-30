@@ -1,0 +1,24 @@
+.section {
+	&.plus-section {
+		background-image: -webkit-linear-gradient(
+			305deg,
+			#0291bb 0%,
+			#30bbc8 100%
+		);
+		background-image: linear-gradient(145deg, #0291bb 0%, #30bbc8 100%);
+		.cta-container {
+			a {
+				background-image: -webkit-linear-gradient(
+					305deg,
+					#0291bb 0%,
+					#30bbc8 100%
+				);
+				background-image: linear-gradient(
+					145deg,
+					#0291bb 0%,
+					#30bbc8 100%
+				);
+			}
+		}
+	}
+}

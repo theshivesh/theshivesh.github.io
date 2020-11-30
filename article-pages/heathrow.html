@@ -1,152 +1,130 @@
 <html lang="en" class="no-js">
-    <head>
-        <title>
-           Heathrow - Shivesh Mishra
-        </title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-        <link rel="stylesheet" href="../styles/article-page.css">
-    </head>
-    <body>
+	<head>
+		<title>Heathrow </title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+		/>
+		<link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/homepage.css" />
+        <link rel="stylesheet" href="../styles/article.css" />
+        
 
-        <!-- STICKY TO TOP ICON STARTS HERE -->
+	</head>
+	<body>
 
+		<!-- Navigation starts -->
+		<nav class="main-navigation">
+			<div class="brand-logo-container">
+				<a href="../index.html" name="top"><i class="icon brand-logo-icon"></i></a>
+			</div>		
+			<div class="theme-toggle-container">
+				<div class="theme-toggle"></div>
+			</div>	
+		</nav>
 
-        <!-- STICKY TO TOP ICON ENDS HERE -->
+		<article>
+			<div class="project-header">
+				<div class="project-header-content">
+				<h1>London Heathrow Airport Website - Redesign</h1>
+			</div>
+				<figure>
+					<img src="../img/projects/heathrow/heathrow.png" />
+				</figure>
+			</div>
+			<div class="article-narrow-content">
+				<h2>Problem statement</h2>
+					<p>Sunny Britto is a digital marketing professional who has been in London for 3 days on work. The hotel he's staying at has a strict check-out policy - he would have to pay extra if he doesn't check out after 10:00 am.</p>
+					<p>His return flight to Mumbai from London Heathrow is at 5:00 pm, he is expected to report at the airline counter around 3 pm. Which leaves him with 3 hours to kill. 3 hours is not enough for him to catch any sights in London.</p>
+					<p>So, he's left with only one option - spending that time at the airport. Maybe a good opportunity to buy souvenirs for his family, some booze from the duty free and grab a quick bite before he checks-in.</p>
+					<p>He has a wife & 1-year-old son and he loves Japanese food.</p>
+				<h2>Aim</h2>
+				<p>The Aim is to design a set of airport information pages (web pages) or a microsite which is responsive and caters to his needs, so he can look information about the Heathrow airport to maximise those 3 hours.</p>
+				<h2>How I solved</h2>
+				<p>There are certain steps which I've followed to make things happen -</p>
 
-        <!-- NAVIGATION BAR STARTS HERE -->
-        <header class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="../homepage/bible.html">Shiv<span class="brand-dot">.</span></a>
-                </div>
-                <nav>
-                    <div class="nav-mobile">
-                        <a id="nav-toggle" href="#!">
-                            <span></span>
-                        </a>
-                    </div>
-                    <div class="navbar-content">
-                        <ul class="nav-list">
-                            <li>
-                                <a href="../homepage/bible.html">Work</a>
-                            </li>
-                            <li>
-                                <a href="../article-pages/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="../homepage/experiments.html">Experiments</a>
-                            </li>          
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+				<ul class="list-style-disc">
+					<li>
+						<p><b>Research:</b> The beginning of everything: target audience, goals, tasks, context, meaningful requirements, etc.</p>
+					</li>
+					<li>
+						<p><b>IxD & Wireframing:</b> Affordances, cues, CTAs, visual elements</p>
+					</li>
+					<li>
+						<p><b>Design and Prototype:</b> While designing a product I make sure that it's pixel perfect and the flow is clean enough so that even a kid could navigate through the interface. Once I'm satisfied with what I've designed, I Prototype either on Invision or on my personal favorite HTML/CSS</p>
+					</li>
+					<li>
+						<p><b>Research:</b> The beginning of everything: target audience, goals, tasks, context, meaningful requirements, etc.</p>
+					</li>
+				</ul>
+				
+				<h2>Solution</h2>
+				<p>For the solution I had created a responsive microsite(Combinaion of 9 web pages). That caters the needs of the user waiting at the airport so that he can look information about the Heathrow Airport, buy some souvenirs for his family, some booze from the duty free grabs a bite before he checks-in.</p>
+				<h4>The Homepage</h4>
+				<p>My idea behind the homepage is to provide as much as information about the Heathrow airport like, the shopping, facilities, ticket offers, Dinner and drinks,etc.</p>
+				<p>It contains a set of sections providing information or service related to the section.</p>
+				<p>Ticket offers section provides special offers/deals that a user can avail when they book directly through heathrow.</p>
+				<p>Boutique section at the bottom helps the user to pre-book the order and easily collect it before the flight takes off.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/heathrow/img-1.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-section">
+				<h4>Shop and dine Page</h4>
+				<p>This page contains a custom filter that actually works as an elastic search. All you need to do is choose a tab and further sub-filters in that tab i.e. Terminal(T1, T2, T3), Location(Before Security, After Security), Category(Superfast lunch, Cheap Dine, Luxury Dines) and Search by keyword. It saves time of browsing all the shops and eating places by shrinking down the search results.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/heathrow/img-2.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Shopping directory page</h4>
+				<p>Contains a set of cards containing information about miltiple shops. These cards also show the terminals information i.e. we can check if the store is available near your terminal or not. If the user is looking for something specific then he can also use the custom filters to refine results and save time.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/heathrow/img-3.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Shop/store information page</h4>
+				<p>Detailed information about any shop. You can also check the avalibility of the store on different terminals.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/heathrow/img-4.png" alt="web1">
+				</div>
+			</div>
+			<div class="end-of-article-block">
+				<p>Thanks for reading</p>
+				<a class="button back-to-top-button" href="../index.html">See All Projects</a>
+			</div>
+			
+			
+		</article>
+		
 
-        <!-- NAVIGATION BAR ENDS HERE -->
+		<script
+			crossorigin="anonymous"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		></script>
+		<script type="text/javascript" src="../js/custom.js"></script>
+		<script>
 
-        <!-- FULL SOLUTION IMAGE BLOCK STARTS HERE -->
-
-        <!-- <div class="full-solution">
-
-            <figure>
-                <img src="../img/project-images/freshin/full-solution.png">
-            </figure>
-
-        </div> -->
-
-        <!-- FULL SOLUTION IMAGE BLOCK ENDS HERE -->
-
-        <!-- ARTICLE PAGE HEADER STARTS HERE -->
-
-        <div class="project-header">
-            <div class="project-intro lg-6 md-8 sm-12">
-                <h2>London Heathrow Airport Website - Redesign</h2>
-                <span>An assignment given by cleartrip.com</span>
-            </div>
-            <figure class="project-image lg-6 md-8 sm-12">
-                <img src="../img/project-images/heathrow/heathrow.png" alt="headlines-hero">
-            </figure>
-        </div>
-
-        <div class="project-body lg-6 md-8 sm-12">
-            <p>During my job search I've applied to cleartrip for the position of Product designer. Cleartrip is a global online travel company, which operates an online travel aggregator website for booking flights and train tickets, hotel reservations, and activities in India and the Middle East countries. It has offices across India, UAE, Saudi Arabia and Egypt.</p>
-            <h3>Problem Statement (Assignment):</h3>
-            <p>Sunny Britto is a digital marketing professional who has been in London for 3 days on work. The hotel he's staying at has a strict check-out policy - he would have to pay extra if he doesn't check out after 10:00 am.</p>
-            <p>His return flight to Mumbai from London Heathrow is at 5:00 pm, he is expected to report at the airline counter around 3 pm. Which leaves him with 3 hours to kill. 3 hours is not enough for him to catch any sights in London.</p>
-            <p>So, he's left with only one option - spending that time at the airport. Maybe a good opportunity to buy souvenirs for his family, some booze from the duty free and grab a quick bite before he checks-in.</p>
-            <p>He has a wife & 1-year-old son and he loves Japanese food.</p>
-            <p class="blockquote">The Aim is to design a set of airport information pages (web pages) or a microsite which is responsive and caters to his needs, so he can look information about the Heathrow airport to maximise those 3 hours.</p>
-            <h4>Deliverables - </h4>
-            <ul class="list-style-disc">
-                <li>
-                    <p>Uniqueness of the design solution</p>
-                </li>
-                <li>
-                    <p>Depth of design thinking</p>
-                </li>
-                <li>
-                    <p>Clarity in overall communication & usability</p>
-                </li>
-                <li>
-                    <p>Attention to details, finish & quality of the final product</p>
-                </li>
-                <li>
-                    <p>Structured/ Semantic markup</p>
-                </li>
-            </ul>
-            <h3>How I solved</h3>
-            <p>This product not just requires designing some clean pages, or some beautiful mocks. I have to take the full ownership of the product and have to make things from scratch. There are certain steps which I've followed to make things happen -</p>
-            <ul class="list-style-disc">
-                <li>
-                    <p><b>Research - </b> The beginning of everything: target audience, goals, tasks, context, meaningful requirements, etc.</p>
-                </li>
-                <li>
-                    <p><b>IxD & Wireframing - </b> Affordances, cues, CTAs, visual elements – everything is put onto the interface blueprints in order to engage a user, motivate him to interact, and ensure positive emotional feedback afterward.</p>
-                </li>
-                <li>
-                    <p><b>Design and Prototype - </b> While designing a product I make sure that it's pixel perfect and the flow is clean enough so that even a kid could navigate through the interface. Once I'm satisfied with what I've designed, I Prototype (HTML/CSS or Invision)</p>
-                </li>
-            </ul>
-            <h4>Tools used -</h4>
-            <p>Photoshop(Design), Invision(Rough prototype), HTML/CSS, Bootstrap, jQuery (Development)</p>
-            <h3>Solution</h3>
-            <p>For the solution I had created a microsite(Combinaion of 9 web pages) that is responsive and caters the need of the user waiting at the airport so that he can look information about the Heathrow Airport, but some souvenirs for his family, some booze from the duty free grabs a bite before he checks-in. </p>
-            <h4>The Homepage</h4>
-            <p>My idea behind the homepage is to provide as much as information about the Heathrow airport like, the shopping, facilities, ticket offers, Dinner and drinks,etc.</p>
-            <p>It contains a set of sections each providing a particular information or service.</p>
-            <p>On the top the page theres section for ticket offers section. Which are the special offers that a user can only get when they are directly booking through heathrow.</p>
-            <p>Boutique section at the bottom helps the user to pre-book the order and easily collect it before the flight takes off.</p>
-            <img src="../img/project-images/heathrow/img-1.png" alt="homepage">
-            <span class="image-footer">Homepage gives a brief about all the services.</span>
-            <h4>Shop and dine Page</h4>
-            <p>This page contains a custom filter that actually works as an elastic search. All you need to do is choose a tab and further sub-filters in that tab i.e. Terminal(T1, T2, T3), Location(Before Security, After Security), Category(Superfast lunch, Cheap Dine, Luxury Dines) and Search by keyword. It saves time of browsing all the shops and eating places by shrinks down the search and filtered result accordingly.</p>
-            <img src="../img/project-images/heathrow/img-2.png" alt="shopanddine">
-            <span class="image-footer">Shop and dine page</span>
-            <p>This section also contains some of the Heathrow boutique parts with the best deals. Also the list of brands to choose from at the bottom of the page.</p>
-            <h4>Shopping directory page</h4>
-            <p>Contains a set of cards displaying the image for the particular shop and some description about that store. Also, link to know more about the store and know its exact location.</p>
-            <img src="../img/project-images/heathrow/img-3.png" alt="directorypage">
-            <span class="image-footer">Shopping directory page</span>
-            <p>These cards also show the terminals information i.e. we can check if the store is available near your terminal or not.</p>
-            <p>If the user is looking for something specific then he can also use the custom filters to filter the results to save time if he does not have that amount of time before check-in.</p>
-            <h4>Shop/store information page</h4>
-            <p>Contains the detailed information about any shop and shows you the exact location of that store. You can also check out the avalibility of that store in different terminals.</p>
-            <img src="../img/project-images/heathrow/img-4.png" alt="informationpage">
-
-            <p>Thanks for reading. <a href="../homepage/bible.html">All Projects</a></p>
-        </div>
-
-        <!-- ARTICLE PAGE HEADER ENDS HERE -->
-
-        <!-- SCRIPT FILES STARTS HERE -->
-
-        <script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/custom.js"></script>
-
-        <!-- SCRIPT FILES ENDS HERE -->
-    </body>
+		</script>
+		<!-- SCRIPT FILES ENDS HERE -->
+	</body>
 </html>

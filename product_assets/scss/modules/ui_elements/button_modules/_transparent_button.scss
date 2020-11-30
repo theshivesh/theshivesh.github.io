@@ -1,0 +1,7 @@
+.button {
+	&.transparent-button {
+		background: transparent;
+		box-shadow: none;
+		color: $white;
+	}
+}

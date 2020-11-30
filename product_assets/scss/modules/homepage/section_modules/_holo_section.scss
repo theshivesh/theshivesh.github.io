@@ -1,0 +1,32 @@
+.section {
+	&.holo-section {
+		background-image: -webkit-linear-gradient(
+			325deg,
+			#c7a754 0%,
+			#967c43 55%,
+			#7e673b 100%
+		);
+		background-image: linear-gradient(
+			325deg,
+			#c7a754 0%,
+			#967c43 55%,
+			#7e673b 100%
+		);
+		.cta-container {
+			a {
+				background-image: -webkit-linear-gradient(
+					325deg,
+					#c7a754 0%,
+					#967c43 55%,
+					#7e673b 100%
+				);
+				background-image: linear-gradient(
+					325deg,
+					#c7a754 0%,
+					#967c43 55%,
+					#7e673b 100%
+				);
+			}
+		}
+	}
+}

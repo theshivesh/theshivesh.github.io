@@ -1,290 +1,197 @@
 <html lang="en" class="no-js">
-    <head>
-        <title>
-           Browserstack - Screenshots
-        </title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-        <link rel="stylesheet" href="../styles/article-page.css">
-    </head>
-    <body>
+	<head>
+		<title>Screenshots </title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+		/>
+		<link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/homepage.css" />
+        <link rel="stylesheet" href="../styles/article.css" />
+        
 
-        <!-- STICKY TO TOP ICON STARTS HERE -->
+	</head>
+	<body>
 
+		<!-- Navigation starts -->
+		<nav class="main-navigation">
+			<div class="brand-logo-container">
+				<a href="../index.html" name="top"><i class="icon brand-logo-icon"></i></a>
+			</div>		
+			<div class="theme-toggle-container">
+				<div class="theme-toggle"></div>
+			</div>	
+		</nav>
 
-        <!-- STICKY TO TOP ICON ENDS HERE -->
+		<article>
+			<div class="project-header">
+				<div class="project-header-content">
+				<h1>Screenshot Testing On Real Browsers & Devices</h1>
+				<p>Rapidly test cross-browser compatibility across 2000+ browsers and devices</p>
+			</div>
+				<figure>
+					<img src="../img/projects/screenshots/project-hero.png" />
+				</figure>
+			</div>
+			<div class="article-narrow-content">
+				<h2>Problem statement</h2>
+				<ul class="list-style-disc">
+					<li>
+						<p>Highlighting the length and breadth of the OS and browser versions offered by BrowserStack.</p>
+					</li>
+					<li>
+						<p>Finding specific browser and OS combinations isn’t intuitive.</p>
+					</li>
+					<li>
+						<p>Interaction for selecting multiple combinations to generate multiple screenshots at once may be time-consuming.</p>
+					</li>
+				</ul>
+				<h2>Design explorations</h2>
+				<p>Started by conducting a quick secondary research on Screenshots. The Goal was to find a pattern of highlighting the length and breadth of the OS and browser versions offered by BrowserStack.</p>
+				<h4>Screenshots - Default view</h4>
+				<p>Screenshots default view is a scenario where a user lands on screenshots for the first time.</p>
+				<p>Interaction for selecting multiple combinations to generate multiple screenshots at once may be time-consuming.</p>
+				<p>Below are the inactive and active scenarios for input field(Search):</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/screenshots-default.png" alt="web1">
+					<img src="../img/projects/screenshots/screenshots-default-url-entered.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Desktop UX</h4>
+				<p>Browsers and OS combinations container will have a fixed height and the content inside it will be scrollable. Users can easily switch between desktop and mobile browsers with the help of tabs.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/screenshots/d1.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>With screenshots users can Save a list, clear a list, filter a list and filter custom combination for the faster access.</p>
+				<p>Users can add more browser version in the list by clicking on the '+' icon nexxt to the versions. This plus icons will appear on hover event on a perticular combination.</p>
+				<h4>Advanced Setting</h4>
+				<p>Users can swich to advanced settings by clicking on the advanced button nest to generate.</p>
+				<p>The advanced settings allows users to apply advanced settings such as resolutions,quality,etc.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/screenshots/setting.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>Modals can be locked by clicking on the close icon. Also the user need to click on save button in order to reflect the changes.</p>
+				<h4>Browser/OS filters dropdown</h4>
+				<p>A collection of pre-made or custom filters section. These filters allows user to quickly find the relevent collection of browsers. Users can add more filters into dropdown by saving a collection/list of browsers.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/filter.png" alt="web1">
+					<img src="../img/projects/screenshots/scroll.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>The selected list will be represented with a tick icon.</p>
+				<h4>Desktop - Multiple browser versions / OS combinations selected</h4>
+				<p>A scenario where multiple browser versions are selected.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/screenshots/multi.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Create a custom list/combination</h4>
+				<p>Users can create a custom filter list by saving a list/combination of browser versions.</p>
+				<p>Saving a list: 1- Click on the save button. 2- Enter a list name in the modal window. Click on save.</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/save.png" alt="web1">
+					<img src="../img/projects/screenshots/clear.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>All versions for a specific browser and OS combination.</h4>
+				<p>A tooltip view with a list of all older list of Browser versions along with the x64bit browsers. Users can easily switch between x32 and x64 versions with a help of a tab present in the tooltip. This helps to quicly and easily select a version.</p>
+				<p>List of versions selected from the tooltip will reflect in the main list by allocating a space in that particular list. By doing so the height of the entire row will reflect. (x32 bit scenario)</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/f1.png" alt="web1">
+					<img src="../img/projects/screenshots/f2.png" alt="web1">
+					<img src="../img/projects/screenshots/f3.png" alt="web1">
+					<img src="../img/projects/screenshots/f4.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Mobile UX</h4>
+				<p>In the mobile scenario the sticky list of browsers will be removed. On mobile view the latest version of browser will be shown for the selected mobile device.</p>
+				<p>For mobile devices users can select the resolutions to portrait and landscape (according to device)</p>
+				<p>Real time changes will reflect in the list as we start to select entities/ versions/ resolutions list from the more options tooltip</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/m1.png" alt="web1">
+					<img src="../img/projects/screenshots/m2.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Screenshots Generated UX</h4>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/screenshots/final-collapsed.png" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>This page shows the screenshots generated as per the OS and browser combinations. Users can share the test results(Via. Link, Slack, Asana, Email, Jira, trello and other team collaboration mediums), Download individial screen / ZIP of all screens, check the progress, cancel, run again and start a new test. The screenshot thumbnail shows the OS and Browser version for that screenshot along with live test and download file options. Also a skeleton view for the loading screenshots.</p>
+				<h4>low-fi study</h4>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images">
+					<img src="../img/projects/screenshots/1.jpg" alt="web1">
+					<img src="../img/projects/screenshots/2.jpg" alt="web1">
+					<img src="../img/projects/screenshots/3.jpg" alt="web1">
+					<img src="../img/projects/screenshots/4.jpg" alt="web1">
+					<img src="../img/projects/screenshots/5.jpg" alt="web1">
+					<img src="../img/projects/screenshots/6.jpg" alt="web1">
+					<img src="../img/projects/screenshots/7.jpg" alt="web1">
+					<img src="../img/projects/screenshots/8.jpg" alt="web1">
+					<img src="../img/projects/screenshots/9.jpg" alt="web1">
+					<img src="../img/projects/screenshots/10.jpg" alt="web1">
+					<img src="../img/projects/screenshots/11.jpg" alt="web1">
+					<img src="../img/projects/screenshots/12.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="end-of-article-block">
+				<p>Thanks for reading</p>
+				<a class="button back-to-top-button" href="../index.html">See All Projects</a>
+			</div>
+			
+			
+		</article>
+		
 
-        <!-- NAVIGATION BAR STARTS HERE -->
-        <header class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="../homepage/bible.html">Shiv<span class="brand-dot">.</span></a>
-                </div>
-                <nav>
-                    <div class="nav-mobile">
-                        <a id="nav-toggle" href="#!">
-                            <span></span>
-                        </a>
-                    </div>
-                    <div class="navbar-content">
-                        <ul class="nav-list">
-                            <li>
-                                <a href="../homepage/bible.html">Work</a>
-                            </li>
-                            <li>
-                                <a href="../article-pages/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="../homepage/experiments.html">Experiments</a>
-                            </li>          
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+		<script
+			crossorigin="anonymous"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		></script>
+		<script type="text/javascript" src="../js/custom.js"></script>
+		<script>
 
-        <!-- NAVIGATION BAR ENDS HERE -->
-
-        <!-- ARTICLE PAGE HEADER STARTS HERE -->
-
-        <div class="project-header">
-            <div class="project-intro lg-6 md-8 sm-12">
-                <h2>Screenshot Testing On Real Browsers & Devices</h2>
-                <span>Rapidly test cross-browser compatibility across 2000+ browsers and devices</span>
-                <a href="screenshots-bible.html" class="button" target="_blank">Screenshots touchpoints bible</a>
-                
-            </div>
-            <figure class="project-image lg-6 md-8 sm-12">
-                <img src="../img/project-images/screenshots/project-hero.png" alt="project-hero">
-            </figure>
-        </div>
-
-        <div class="project-body lg-6 md-8 sm-12">
-            <h3>Problem statement</h3>
-            <ul class="list-style-disc">
-                <li>
-                    <p>Highlighting the length and breadth of the OS and browser versions offered by BrowserStack.</p>
-                </li>
-                <li>
-                    <p>Finding specific browser and OS combinations isn’t intuitive.</p>
-                </li>
-                <li>
-                    <p>Interaction for selecting multiple combinations to generate multiple screenshots at once may be time-consuming.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="project-body">
-            <div class="lg-6 md-8 sm-12 mauto">
-                <h3>Design explorations</h3>
-                <p>Started by conducting quick research on Browserstack Screenshots. Finding it's advantages and limitations. The Goal was to find a pattern of highlighting the length and breadth of the OS and browser versions offered by BrowserStack.</p>
-                </p>
-               <!--  <ul class="list-style-disc">
-                    <li>
-                        <p>Allowing the user to select all the versions of a browser for a specific OS.</p>
-                    </li> --><!-- 
-                    <li>
-                        <p>Letting the user select the length and breadth of OS and Browser versions.</p>
-                    </li> -->
-                </ul>
-                <h4>Screenshots - Default view</h4>
-                <p>Screenshots default view is a scenario where a user lands on screenshots for the first time.</p>
-                <p>Input and buttons are unfocued until user starts to type/paste a URL</p>
-                <p>Below are both the inactive and the active scenarios for the input container</p><br />
-                <br />
-            </div>
-            <div class="multiple-inline-images">
-            <img src="../img/project-images/screenshots/screenshots-default.png" alt="web1" />
-            <img src="../img/project-images/screenshots/screenshots-default-url-entered.png" alt="web1" />
-            </div>
-            <br /><br />
-            <div class="lg-6 md-8 sm-12 mauto">
-                <h4>Desktop UX</h4>
-                <p>
-                    Browsers and OS combinations container will have a fixed height and the content inside it will be scrollable. Users can easily switch between desktop and mobile browsers with the help of tabs.
-                </p>
-                <img src="../img/project-images/screenshots/d1.png" alt="web1" />
-                <p>With screenshots users can Save a list, clear a list, filter a list and filter custom combination for the faster access.</p>
-                <p>Users can add more browser version in the list by clicking on the '+' icon nexxt to the versions. This plus icons will appear on hover event on a perticular combination.</p>
-                <strong>Advanced Setting</strong>
-                <p>Users can swich to advanced settings by clicking on the advanced button nest to generate.</p>
-                <p>The advanced settings allows users to apply advanced settings such as resolutions,quality,etc. </p>
-                <img src="../img/project-images/screenshots/setting.png" alt="web1" />
-                <p>Modals can be locked by clicking on the close icon. Also the user need to click on save button in order to reflect the changes.</p>
-                <strong>Browser/OS filters dropdown</strong>
-                <p>
-                    A collection of pre-made or custom filters
-                    section. These filters allows user to
-                    quickly find the relevent collection of
-                    browsers. Users can add more filters into
-                    dropdown by saving a collection/list of
-                    browsers.
-                </p>
-                <img src="../img/project-images/screenshots/filter.png" alt="web1" />
-                <br />
-                <p>The selected list will be represented with a tick icon.</p>
-                <p><strong>Desktop - Scrolled view</strong></p>
-                <img src="../img/project-images/screenshots/scroll.png" alt="web1" /><br /><br />
-                <p><strong>
-                    Desktop - Multiple browser versions / OS
-                    combinations selected
-                </strong></p>
-                <p>A scenario where multiple browser versions are selected. </p>
-                <br /><br />
-                <img src="../img/project-images/screenshots/multi.png" alt="web1" /><br /><br />
-                <p><strong>
-                    Create a custom list/combination
-                </strong></p>
-                <p>Users can create a custom filter list by
-                    saving a list/combination of browser
-                    versions</p>
-                    <p>Saving a list: 1- Click on the save button. 2- Enter a list name in the modal window. Click on save.</p>
-                <br /><br />
-                <img src="../img/project-images/screenshots/save.png" alt="web1" />
-                <br /><br />
-                <p><strong>
-                    Clear list
-                </strong></p>
-                <p>Clear all browser and devices combinations
-                    to initial. A modal popover will appear to
-                    confirm this action.</p>
-                <br /><br />
-                <img src="../img/project-images/screenshots/clear.png" alt="web1" />
-                <br /><br />
-                <p><strong>
-                    All versions for a specific browser and OS
-									combination. 
-                </strong></p>
-                <p>A tooltip view with a list of all older list
-                    of Browser versions along with the x64bit
-                    browsers. Users can easily switch between
-                    x32 and x64 versions with a help of a tab
-                    present in the tooltip. This helps to quicly
-                    and easily select a version.</p>
-                    <p>List of versions selected from the tooltip
-                        will reflect in the main list by allocating
-                        a space in that particular list. By doing so
-                        the height of the entire row will reflect.
-                        (x32 bit scenario)</p>
-                <br /><br />
-            </div>
-            <div class="multiple-inline-images">
-            <img src="../img/project-images/screenshots/f1.png" alt="web1" />
-            <img src="../img/project-images/screenshots/f2.png" alt="web1" />
-            </div>
-            <br /><br />
-            <div class="multiple-inline-images">
-                <img src="../img/project-images/screenshots/f3.png" alt="web1" />
-                <img src="../img/project-images/screenshots/f4.png" alt="web1" />
-            </div>
-            <div class="lg-6 md-8 sm-12 mauto">
-                <h4>Mobile UX</h4>
-                <p>In the mobile scenario the sticky list of
-                    browsers will be removed. On mobile view the
-                    latest version of browser will be shown for
-                    the selected mobile device.
-                </p><br/><br/>
-                    <img src="../img/project-images/screenshots/m1.png" alt="web1" />
-                    <br/><br/>
-                    <p>For mobile devices users can select the
-                        resolutions to portrait and landscape
-                        (according to device)
-                    </p>
-                    <img src="../img/project-images/screenshots/m2.png" alt="web1" /><br/><br/>
-                    <img src="../img/project-images/screenshots/m3.png" alt="web1" /><br/><br/>
-                    <p>Real time changes will reflect in the list
-                        as we start to select entities/ versions/
-                        resolutions list from the more options
-                        tooltip
-                    </p>
-
-                </div>
-                <div class="lg-6 md-8 sm-12 mauto">
-                    <h4>Screenshots Generated UX</h4>
-                    <br/><br/>
-                        <img src="../img/project-images/screenshots/final-collapsed.png" alt="web1" />
-                        <br/><br/>
-                    <p>This page shows the screenshots generated as
-                        per the OS and browser combinations. Users
-                        can share the test results(Via. Link, Slack,
-                        Asana, Email, Jira, trello and other team
-                        collaboration mediums), Download individial
-                        screen / ZIP of all screens, check the
-                        progress, cancel, run again and start a new
-                        test. The screenshot thumbnail shows the OS
-                        and Browser version for that screenshot
-                        along with live test and download file
-                        options. Also a skeleton view for the
-                        loading screenshots.
-                    </p>
-                    </div>
-                    <div class="lg-6 md-8 sm-12 mauto">
-                        <h4>Error Scenarios</h4>
-                        <p><strong>Invalid URL, No internet, Technical issue, etc.</strong></p>
-                        <p>All the error message blocks will be
-                            floating on a fixed bottom position.
-                        </p>
-                        <br/><br/>
-                            <img src="../img/project-images/screenshots/error-invalid-url.png" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/error-no-internet.png" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/error-technical-issue.png" alt="web1" />
-                            <br/><br/>
-                        </div>
-                        <div class="lg-6 md-8 sm-12 mauto">
-                            <h4>Some of the low-fi study</h4>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/1.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/2.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/3.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/4.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/5.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/6.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/7.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/8.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/9.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/10.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/11.jpg" alt="web1" />
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="../img/project-images/screenshots/12.jpg" alt="web1" />
-                            <br/><br/>
-
-                        <h4 style="text-align: center;"> The End.</h4>
-            </div>
-        </div>
-        <!-- ARTICLE PAGE HEADER ENDS HERE -->
-
-        <!-- SCRIPT FILES STARTS HERE -->
-
-        <script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/custom.js"></script>
-
-        <!-- SCRIPT FILES ENDS HERE -->
-    </body>
+		</script>
+		<!-- SCRIPT FILES ENDS HERE -->
+	</body>
 </html>

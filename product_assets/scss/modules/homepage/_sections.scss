@@ -1,0 +1,104 @@
+@import "../common/mixin.scss";
+@import "./section_modules/_scrollstack_section";
+@import "./section_modules/_debate_section";
+@import "./section_modules/_headlines_section";
+@import "./section_modules/_plus_section";
+@import "./section_modules/_language_section";
+@import "./section_modules/_live_section";
+@import "./section_modules/_screenshots_section";
+@import "./section_modules/_holo_section";
+@import "./section_modules/_freshin_section";
+@import "./section_modules/_terra_section";
+@import "./section_modules/_about_section";
+
+.section {
+	display: flex;
+	align-items: center;
+	padding: 90px 50px;
+	.section-content {
+		flex: 1;
+		padding-right: 100px;
+		h1,
+		p {
+			color: $white;
+		}
+		h1 {
+			font-size: 80px;
+			line-height: 88px;
+			font-weight: bold;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 24px;
+			line-height: 34px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.cta-container {
+		margin-top: 30px;
+		a {
+			border-radius: 999px;
+			margin-right: 20px;
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+	figure {
+		flex: 1;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.section {
+		flex-direction: column;
+		padding: 50px;
+		text-align: center;
+		.section-content {
+			padding: 0;
+			h1 {
+				font-size: 70px;
+				line-height: 80px;
+			}
+			p {
+				font-size: 20px;
+				line-height: 28px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.section {
+		flex-direction: column;
+		padding: 40px 30px;
+		.section-content {
+			padding: 0;
+
+			h1 {
+				font-size: 60px;
+				line-height: 70px;
+			}
+			p {
+				font-size: 20px;
+				line-height: 28px;
+				margin-bottom: 30px;
+			}
+		}
+		.cta-container {
+			a {
+				margin-bottom: 20px;
+				&:last-of-type {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

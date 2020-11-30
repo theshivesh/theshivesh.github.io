@@ -1,180 +1,196 @@
 <html lang="en" class="no-js">
-    <head>
-        <title>
-           Heathrow - Shivesh Mishra
-        </title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-        <link rel="stylesheet" href="../styles/article-page.css">
-    </head>
-    <body>
+	<head>
+		<title>Post Booking </title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+		/>
+		<link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/homepage.css" />
+        <link rel="stylesheet" href="../styles/article.css" />
+        
 
-        <!-- STICKY TO TOP ICON STARTS HERE -->
+	</head>
+	<body>
 
+		<!-- Navigation starts -->
+		<nav class="main-navigation">
+			<div class="brand-logo-container">
+				<a href="../index.html" name="top"><i class="icon brand-logo-icon"></i></a>
+			</div>		
+			<div class="theme-toggle-container">
+				<div class="theme-toggle"></div>
+			</div>	
+		</nav>
 
-        <!-- STICKY TO TOP ICON ENDS HERE -->
+		<article>
+			<div class="project-header">
+				<div class="project-header-content">
+				<h1>Redesigning the flight booking confirmation page</h1>
+				<p>Post-booking experience</p>
+			</div>
+				<figure>
+					<img src="../img/projects/flight-booking/project-hero.jpg" />
+				</figure>
+			</div>
+			<div class="article-narrow-content">
+				
+					<p>As far as the post-booking experience goes, the booking confirmation page is one of the key user touch points. The user sees the flight booking confirmation screen after his payment has been processed and flights have been booked.
 
-        <!-- NAVIGATION BAR STARTS HERE -->
-        <header class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="../homepage/bible.html">Shiv<span class="brand-dot">.</span></a>
-                </div>
-                <nav>
-                    <div class="nav-mobile">
-                        <a id="nav-toggle" href="#!">
-                            <span></span>
-                        </a>
-                    </div>
-                    <div class="navbar-content">
-                        <ul class="nav-list">
-                            <li>
-                                <a href="../homepage/bible.html">Work</a>
-                            </li>
-                            <li>
-                                <a href="../article-pages/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="../homepage/experiments.html">Experiments</a>
-                            </li>          
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+					<p>Here are some of the things that a user can do after he has completed his booking -</p>
+					
+					<h4>Primary gigs (specific to the booking)</h4>
+					
 
-        <!-- NAVIGATION BAR ENDS HERE -->
+				<ul class="list-style-disc">
+					<li>
+						<p>Review his booking/ payment details (Users are too anxious to find out what they’ve been charged/ verify if the transaction went through without any problems)</p>
+					</li>
+					<li>
+						<p>Print Tickets</p>
+					</li>
+					<li>
+						<p>Select Seats</p>
+					</li>
+					<li>
+						<p>Send tickets / PNR Info to his co-travellers</p>
+					</li>
+					<li>
+						<p>Share trip details on Twitter/ Facebook etc</p>
+					</li>
+				</ul>
 
-        <!-- FULL SOLUTION IMAGE BLOCK STARTS HERE -->
+				<h4>Secondary gigs</h4>
 
-        <!-- <div class="full-solution">
+				<ul class="list-style-disc">
+					<li>
+						<p>Book airport transfers (Uber/ OLA/ Airport Cabs) through their API</p>
+					</li>
+					<li>
+						<p>Explore content on the city he is traveling to (Directing traffic to one of our products- Local)</p>
+					</li>
+					<li>
+						<p>Book a hotel</p>
+					</li>
+					<li>
+						<p>Book a return trip if the user has only booked one way</p>
+					</li>
+					<li>
+						<p>Confirm his/ her Account (we might need to educate the customer about benefits)</p>
+					</li>
+				</ul>
+				
+				<h2>Solution</h2>
+				<p>The whole page is divided into 6 section to deliver the best end-to-end user experience.</p>
+				<h4>Section 1 : Ticket confirmation section</h4>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/1.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>This section let the user know that his/her booking has been confirmed. User can check the trip ID which can used in all communication with the travel merchant. For this product the travel merchant is Cleartrip.</p>
+				<p>There are 3 main sub-sections (primary goals) -</p>
+				<ul class="list-style-disc">
+					<li>
+						<p>Select your seat - Allows user to select seat.</p>
+					</li>
+					<li>
+						<p>Share trip details - Send tickets / PNR Info to his co-travellers</p>
+					</li>
+					<li>
+						<p>Tell your friends - Share trip details on Twitter/ Facebook etc</p>
+					</li>
+				</ul>
+				<h4>Section 2 : Trip and Payment</h4>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/2.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<p>Section further divided into 2 sub-sections i.e. trip details and payment section.</p>
+				<ul>
+					<li>
+						<p>
+							<b>Trip Details:</b> The left section of the ticket that contains all the basic information about the flight. There is a Get ticket button which allows the user to print his/her ticket directly.
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Payment Details/Receipt:</b> The right section contains a full payment receipt, the users can find what they’ve been charged/ verify if the transaction was a success. The user can also check out the taxes and fees breakdown by clicking on the breakdown hyperlink which will open a modal window showing the full payment and fares breakdown.
+						</p>
+					</li>
+				</ul>
+				<h4>Section 3 : Book cabs, Hotels and explore locals</h4>
+				<p>
+					In this section the user check about the primary thing about the place he is travelling. What a user actually wants to know when he lands to a whole new place ? Place to live, what’s trending, and how to reach there.
+				</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/3.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Section 4 : Book return trip</h4>
+				<p>The aim was to show the best flight fares for a week to the user so that he can check the best fares. It's rough and need some more design changes.
+				</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/4.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Section 5 : Explore your account</h4>
+				<p>This entire block is to educate user about his/her account on how they can create their profile, Get personalised offers in the profile section, Check their trips, Adding the trips to the online and offline calendars, cancel a part or the entire trip and some other useful tools.
+				</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/5.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="article-narrow-content">
+				<h4>Section 6 : Feedback</h4>
+				<p>If we missed out something or there is some room for improvent in the booking experience? Users can share their valuable feedbacks in this section. It helps getting the user feedback and help improve the experience
+				</p>
+			</div>
+			<div class="article-wide-content">
+				<div class="multiple-inline-images not-multiple-images">
+					<img src="../img/projects/flight-booking/flight-booking.jpg" alt="web1">
+				</div>
+			</div>
+			<div class="end-of-article-block">
+				<p>Thanks for reading</p>
+				<a class="button back-to-top-button" href="../index.html">See All Projects</a>
+			</div>
+			
+			
+		</article>
+		
 
-            <figure>
-                <img src="../img/project-images/freshin/full-solution.png">
-            </figure>
+		<script
+			crossorigin="anonymous"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		></script>
+		<script type="text/javascript" src="../js/custom.js"></script>
+		<script>
 
-        </div> -->
-
-        <!-- FULL SOLUTION IMAGE BLOCK ENDS HERE -->
-
-        <!-- ARTICLE PAGE HEADER STARTS HERE -->
-
-        <div class="project-header">
-            <div class="project-intro lg-6 md-8 sm-12">
-                <h2>Redesigning the flight booking confirmation page</h2>
-                <span>Post-booking experience</span>
-            </div>
-            <figure class="project-image lg-6 md-8 sm-12">
-                <img src="../img/project-images/flight-booking/project-hero.jpg" alt="product-hero">
-            </figure>
-        </div>
-
-        <div class="project-body lg-6 md-8 sm-12">
-            <p>As far as the post-booking experience goes, the booking confirmation page is one of the key user touch points. The user sees the flight booking confirmation screen after his payment has been processed and flights have been booked.</p>
-            <p>Here are some of the things that a user can do after he has completed his booking -</p>
-            <h4>Primary gigs (specific to the booking)</h4>
-            <ul class="list-style-disc">
-                <li>
-                    <p>Review his booking/ payment details (Users are too anxious to find out what they’ve been charged/ verify if the transaction went through without any problems) </p>
-                </li>
-                <li>
-                    <p>Print Tickets</p>
-                </li>
-                <li>
-                    <p>Select Seats</p>
-                </li>
-                <li>
-                    <p>Send tickets / PNR Info to his co-travellers</p>
-                </li>
-                <li>
-                    <p>Share trip details on Twitter/ Facebook etc </p>
-                </li>
-            </ul>
-            <h4>Secondary gigs</h4>
-            <ul class="list-style-disc">
-                <li>
-                    <p>Book airport transfers (Uber/ OLA/ Airport Cabs) through their API </p>
-                </li>
-                <li>
-                    <p>Explore content on the city he is traveling to (Directing traffic to one of our products- Local) </p>
-                </li>
-                <li>
-                    <p>Book a hotel </p>
-                </li>
-                <li>
-                    <p>Book a return trip if the user has only booked one way </p>
-                </li>
-                <li>
-                    <p>Confirm his/ her Account (we might need to educate the customer about benefits)</p>
-                </li>
-            </ul>
-            <h4>Points considered while redesigning this page</h4>
-            <ul class="list-style-disc">
-                <li>
-                    <p>What is the most critical thing that the user needs to know or do after he’s finished his booking ?</p>
-                </li>
-                <li>
-                    <p>How do we guide the user to complete all the tasks rather than throwing all of them at once?</p>
-                </li>
-            </ul>
-            <h3>Solution</h3>
-            <p>The whole page is divided into 6 section to deliver the best end-to-end user experience. </p>
-            <h4>Section 1 : Ticket confirmation section</h4>
-            <img src="../img/project-images/flight-booking/1.jpg" alt="product-hero">
-            <p>This section let the user know that his/her booking has been confirmed. User can check the trip ID which can used in all communication with the travel merchant. For this product the travel merchant is Cleartrip.</p>
-            <p>There are 3 main sub-sections (primary goals) -</p>
-            <ul class="list-style-disc">
-                <li>
-                    <p><b>Select your seat - </b> Allows user to select seat.</p>
-                </li>
-                <li>
-                    <p><b>Share trip details - </b> Send tickets / PNR Info to his co-travellers</p>
-                </li>
-                <li>
-                    <p><b>Tell your friends - </b> Share trip details on Twitter/ Facebook etc.</p>
-                </li>
-            </ul>
-            <h4>Section 2 : Trip and Payment</h4>
-            <img src="../img/project-images/flight-booking/2.jpg" alt="product-hero">
-            <p>To give a proper feel of a ticket I tried to make a ticket kind of section further divided into 2 sub-sections i.e. trip details and payment section.</p>
-            <ul class="list-style-disc">
-                <li>
-                    <p><b>Trip Details - </b> The left section of the ticket that contains all the basic information about the flight. There is a Get ticket button which allows the user to print his/her ticket directly.</p>
-                </li>
-                <li>
-                    <p><b>Payment Details/Receipt - </b> The right section contains a full payment receipt, the users can find out what they’ve been charged/ verify if the transaction was a success. The user can also check out the taxes and fees breakdown by clicking on the breakdown hyperlink which will open a modal window showing the full payment and fares breakdown.</p>
-                </li>
-            </ul>
-            <h4>Section 3 : Book cabs, Hotels and explore locals</h4>
-            <img src="../img/project-images/flight-booking/3.jpg" alt="product-hero">
-            <p>In this section the user check about the primary thing about the place he is travelling.</p>
-            <p>What a user actually wants to know when he lands to a whole new place ? Place to live, what’s trending, and how to reach there.</p>
-            <h4>Section 4 : Book return trip</h4>
-            <img src="../img/project-images/flight-booking/4.jpg" alt="product-hero">
-            <p>The aim was to show the best flight fares for a week to the user so that he can check the best fares. It's rough and need some more design changes.</p>
-            <h4>Section 5 : Explore your account</h4>
-            <img src="../img/project-images/flight-booking/5.jpg" alt="product-hero">
-            <p>This entire block is to educate user about his/her account on how they can create their profile, Get personalised offers in the profile section, Check their trips, Adding the trips to the online and offline calendars, cancel a part or the entire trip and some other useful tools.</p>
-            <h4>Section 6 : Feedback</h4>
-            <img src="../img/project-images/flight-booking/6.jpg" alt="product-hero">
-            <p>If we missed out something or there is some room for improvent is the booking experience the user can share in this section. It helps getting the user feedback and help improve the experience</p>
-            <h3>Full page screenshot</h3>
-            <img src="../img/project-images/flight-booking/flight-booking.jpg" alt="homepage">
-            <span class="image-footer">Flight booking confirmation page</span>
-
-            <p>Thanks for reading. <a href="../homepage/bible.html">All Projects</a></p>
-        </div>
-
-        <!-- ARTICLE PAGE HEADER ENDS HERE -->
-
-        <!-- SCRIPT FILES STARTS HERE -->
-
-        <script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/custom.js"></script>
-
-        <!-- SCRIPT FILES ENDS HERE -->
-    </body>
+		</script>
+		<!-- SCRIPT FILES ENDS HERE -->
+	</body>
 </html>

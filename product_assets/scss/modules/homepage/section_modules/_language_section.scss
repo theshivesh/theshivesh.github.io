@@ -1,0 +1,24 @@
+.section {
+	&.language-section {
+		background-image: -webkit-linear-gradient(
+			305deg,
+			#233967 0%,
+			#405ac6 100%
+		);
+		background-image: linear-gradient(145deg, #233967 0%, #405ac6 100%);
+		.cta-container {
+			a {
+				background-image: -webkit-linear-gradient(
+					305deg,
+					#233967 0%,
+					#405ac6 100%
+				);
+				background-image: linear-gradient(
+					145deg,
+					#233967 0%,
+					#405ac6 100%
+				);
+			}
+		}
+	}
+}

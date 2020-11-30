@@ -1,0 +1,151 @@
+article {
+	.project-header {
+		.project-header-content {
+			min-height: 230px;
+		}
+		h1,
+		p {
+			max-width: 980px;
+			margin: 0 auto;
+		}
+		h1 {
+			font-size: 75px;
+			line-height: 88px;
+			font-weight: bold;
+			margin: 40px auto 10px;
+		}
+		p {
+			font-size: 24px;
+			line-height: 32px;
+		}
+		figure {
+			margin: 50px 0;
+			background-color: $dark-main-secondary;
+			padding: 50px 80px;
+			&.compact-image {
+				margin: 0 auto;
+				text-align: center;
+				img {
+					width: 60%;
+				}
+			}
+		}
+		.project-more-information {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			border: 1px solid $dark-main-secondary;
+			border-left: none;
+			border-right: none;
+			margin: 40px 80px;
+			padding: 40px 0;
+			.project-information-block {
+				flex: 0 0 32%;
+				padding-right: 25px;
+				h4 {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 600;
+				}
+				ul {
+					padding: 0;
+					margin: 0;
+					margin-top: 20px;
+					li {
+						list-style: none;
+						margin-bottom: 10px;
+					}
+					p {
+						font-size: 21px;
+						line-height: 26px;
+					}
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	article {
+		.project-header {
+			.project-header-content {
+				padding: 0 50px;
+				min-height: initial;
+			}
+			h1 {
+				font-size: 52px;
+				line-height: 62px;
+			}
+			p {
+				font-size: 22px;
+				line-height: 32px;
+			}
+			figure {
+				padding: 50px;
+			}
+			.project-more-information {
+				.project-information-block {
+					margin-bottom: 30px;
+					&:last-of-type {
+						margin: 0;
+					}
+					h4 {
+						font-size: 20px;
+						line-height: 28px;
+					}
+					ul {
+						p {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	article {
+		.project-header {
+			.project-header-content {
+				padding: 0 30px;
+				min-height: initial;
+			}
+			h1 {
+				font-size: 32px;
+				line-height: 40px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 28px;
+			}
+			figure {
+				padding: 20px 30px;
+			}
+			.project-more-information {
+				flex-direction: column;
+				margin: 0;
+				padding: 40px 30px;
+				.project-information-block {
+					margin-bottom: 30px;
+					&:last-of-type {
+						margin: 0;
+					}
+					h4 {
+						font-size: 22px;
+						line-height: 28px;
+					}
+					ul {
+						p {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

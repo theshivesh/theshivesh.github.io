@@ -1,0 +1,60 @@
+.theme-toggle {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: $dark-main-background;
+	cursor: pointer;
+	text-align: center;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-image: linear-gradient(
+			to right,
+			$white 50%,
+			$dark-main-background 50.01%
+		);
+		border: 2px solid $white;
+		transition: transform 0.5s ease-out;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 24px;
+		left: 24px;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: $white;
+		mix-blend-mode: difference;
+	}
+}
+
+.scaling {
+	&::after {
+		animation: scaleInner 0.5s ease forwards;
+	}
+}
+
+// For light mode
+
+.light {
+	.theme-toggle {
+		background: $white;
+		&::before {
+			border: 2px solid $dark-main-background;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+@keyframes scaleInner {
+	50% {
+		transform: scale(1.8);
+	}
+}

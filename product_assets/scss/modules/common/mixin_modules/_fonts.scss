@@ -1,0 +1,26 @@
+@mixin Monts() {
+	font-family: "Montserrat", sans-serif;
+}
+
+@mixin Cali() {
+	// font-family: "Calibre";
+	// src: url("../../../../../fonts/Calibre-Black.eot");
+	// src: local("Calibre Bold"), local("Calibre-Bold"),
+	// 	url("../../../../../fonts/Calibre-Black.eot?#iefix")
+	// 		format("embedded-opentype"),
+	// 	url("../../../../../fonts/Calibre-Black.woff2") format("woff2"),
+	// 	url("../../../../../fonts/Calibre-Black.woff") format("woff"),
+	// 	url("../../../../../fonts/Calibre-Black.ttf") format("truetype");
+	// font-weight: bold;
+	// font-style: normal;
+	font-family: "Calibre";
+	src: url("../../../../../fonts/Calibre-Thin.eot");
+	src: local("Calibre Thin"), local("Calibre-Thin"),
+		url("../../../../../fonts/Calibre-Thin.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../../../../fonts/Calibre-Thin.woff2") format("woff2"),
+		url("../../../../../fonts/Calibre-Thin.woff") format("woff"),
+		url("../../../../../fonts/Calibre-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}

@@ -1,0 +1,107 @@
+.light {
+	background-color: #fff;
+	color: $dark-background;
+
+	// common
+
+	a {
+		color: $blue;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $black;
+	}
+	figure {
+		background-color: $lightest-gray !important;
+	}
+	.section {
+		a {
+			color: $white;
+		}
+	}
+	// Article styling (All Article styling goes into this)
+
+	article {
+		.multiple-inline-images {
+			background-color: $lightest-gray;
+		}
+		.project-header {
+			.project-more-information {
+				border-color: $lightest-gray;
+				.project-information-block {
+					ul {
+						a {
+							color: $black;
+						}
+					}
+				}
+			}
+		}
+	}
+	.end-of-article-block {
+		border-top-color: $light-gray;
+	}
+
+	// Navigation logo
+	.brand-logo-container {
+		.brand-logo-icon {
+			background-position: -23px -226px;
+		}
+	}
+
+	// Intro section
+	.intro-section {
+		.in-body-navigation {
+			li {
+				&.active {
+					a {
+						color: $white;
+					}
+				}
+				a {
+					color: $black;
+				}
+			}
+		}
+	}
+
+	// Other projects section
+	.other-projects-container {
+		h1,
+		p {
+			color: $black;
+		}
+		.cards-container {
+			.card {
+				background-color: $white;
+				box-shadow: none;
+				border: 1px solid $lightest-gray;
+				.card-content-container {
+					.cta-container {
+						a {
+							color: $black;
+						}
+						.right-arrow-icon {
+							background-position: -23px -142px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// back to top button
+	.button {
+		&.back-to-top-button {
+			color: $black;
+			background-color: $white;
+			.top-arrow-icon {
+				background-position: -23px -113px;
+			}
+		}
+	}
+}
