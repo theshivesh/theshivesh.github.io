@@ -1,5 +1,5 @@
 body {
-	@include Cali();
+	font-family: "Calibre" !important;
 	font-kerning: normal;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 300;
@@ -38,7 +38,7 @@ a:hover {
 }
 
 h1 {
-	@include Cali();
+	font-family: "Calibre" !important;
 	font-size: 36px;
 	line-height: 48px;
 	font-weight: 500;
@@ -135,7 +135,7 @@ b {
 }
 
 h3 {
-	@include Cali();
+	font-family: "Calibre" !important;
 	font-size: 24px;
 	line-height: 34px;
 	font-weight: 700;
@@ -144,7 +144,7 @@ h3 {
 }
 
 h5 {
-	@include Cali();
+	font-family: "Calibre" !important;
 	font-size: 15px;
 	line-height: 22px;
 	font-weight: 700;

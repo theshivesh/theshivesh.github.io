@@ -156,7 +156,7 @@
 			flex-direction: column;
 			padding: 35px 0 5px;
 			.work-related-info {
-				flex-basis: 100%;
+				flex-basis: auto;
 				margin-bottom: 20px;
 				h4 {
 					font-size: 20px;
@@ -167,7 +167,7 @@
 				}
 			}
 			.work-description {
-				flex-basis: 100%;
+				flex-basis: auto;
 			}
 		}
 		.education-and-skill-container {
