@@ -78,22 +78,28 @@
 @media (max-width: 767px) {
 	.intro-section {
 		max-width: initial;
+		height: 80vh;
 		padding: 0 30px;
 		h1,
 		a {
-			font-size: 40px;
-			line-height: 52px;
+			font-size: 28px;
+			line-height: 40px;
 		}
-		a {
-			word-break: break-all;
+		&.about-page {
+			margin-bottom: 0;
+			.in-body-navigation {
+				margin-top: auto;
+			}
 		}
 
 		.in-body-navigation {
-			margin-top: 80px;
+			margin-top: auto;
+			margin-bottom: 40px;
 			li {
 				margin-right: 20px;
 				a {
 					font-size: 14px;
+					line-height: 21px;
 				}
 			}
 		}
