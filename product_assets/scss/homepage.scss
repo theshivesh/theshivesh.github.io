@@ -1,3 +1,12 @@
 @import "./modules/homepage/_intro_section";
 @import "./modules/homepage/_sections";
 @import "./modules/homepage/_other_projects_container";
+
+.main-container {
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(680px);
+	scroll-snap-type: y mandatory;
+	section {
+		scroll-snap-align: start;
+	}
+}
