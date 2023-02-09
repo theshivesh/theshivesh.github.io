@@ -3,9 +3,11 @@
 body {
     height: 100vh;
     font-family: "Lato", sans-serif;
+    background-color: $white;
 }
 .homepage-container {
     display: flex;
+    height: 100vh;
 }
 .homepage-image-wrapper {
     position: relative;
@@ -16,17 +18,24 @@ body {
     }
 }
 .homepage-content-wrapper {
-    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     h1 {
         font-size: 32px;
         line-height: 48px;
     }
     p {
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 20px;
-        &:last-of-type {
-            margin: 0;
+        font-size: 24px;
+        line-height: 38px;
+        margin: 0;
+        font-weight: 700;
+        opacity: 0.32;
+        &.highlight {
+            opacity: 1;
         }
     }
     a {
