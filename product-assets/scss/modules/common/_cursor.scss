@@ -1,53 +1,25 @@
-// /* Styling the cursor circle */
-// .cursor {
-//     position: fixed;
-//     width: 30px;
-//     height: 30px;
-//     background-color: $black;
-//     border-radius: 50%;
-//     pointer-events: none;
-//     transition: box-shadow ease-in 150ms, background ease-in 150ms,
-//         transform ease-in 150ms;
-// }
-
-:root {
-    --size: 15px;
-}
-.cursor {
-    height: var(--size);
-    width: var(--size);
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    transform: translate(-50%, -50%);
+.custom-cursor {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
     pointer-events: none;
+    mix-blend-mode: difference;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    transition-property: transform, scale, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    scale: 0.5;
+    z-index: 10;
 }
-
-.cursor.cursor-follower {
-    background: $gray;
-    transition: top 0.25s, left 0.25s, width 0.5s, height 0.5s;
-    transition-timing-function: ease-out;
+.custom-cursor--link {
+    scale: 1;
 }
-
-.cursor.cursor-dot {
-    background: $black;
-    transition: width 0.25s, height 0.25s;
-}
-
-.cursor-follower.focus {
-    --size: 50px;
-    z-index: -1;
-}
-
-.cursor-dot.focus {
-    --size: 10px;
-}
-
-.cursor-follower.focus.focused-button {
-    background: rgba($white, 0.32);
-    --size: 50px;
-}
-
-.cursor-dot.focus.focused-button {
-    background: $white;
+.custom-cursor--init {
+    opacity: 1;
 }
