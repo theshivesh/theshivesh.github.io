@@ -1,3 +1,29 @@
 @import "./modules/common/mixin";
 @import "./modules/common/_browser_reset";
 @import "./modules/common/global_navigation";
+@import "./modules/common/background_grid_lines";
+@import "./selected_work";
+@import "./modules/common/cursor";
+
+@import "./modules/ui_elements/button";
+
+html {
+    cursor: none;
+    user-select: none;
+}
+
+body {
+    height: 100dvh;
+    font-family: "Lato", sans-serif;
+    background-color: $white;
+    margin: 0 auto;
+}
+a {
+    color: $black;
+    cursor: none;
+    transition: 0.3s;
+}
+.section-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}

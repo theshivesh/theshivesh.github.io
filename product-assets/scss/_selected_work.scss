@@ -1,0 +1,122 @@
+.selected-work-container {
+    .selected-work {
+        display: flex;
+        align-items: flex-start;
+        gap: 64px;
+        padding-bottom: 64px;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: #f8f8f8;
+            position: absolute;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        &.reverse-row {
+            flex-direction: row-reverse;
+        }
+        .selected-work-snapshot,
+        .selected-work-briefing {
+            flex: 1;
+        }
+        .selected-work-snapshot {
+            display: inline-block;
+            aspect-ratio: 1 / 1;
+            background-color: $gray;
+            border-radius: 32px;
+
+            img {
+                object-fit: cover;
+                border-radius: 32px;
+            }
+        }
+        .selected-work-briefing {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            h1 {
+                font-size: 44px;
+                line-height: 62px;
+                font-weight: 900;
+            }
+            p {
+                font-size: 18px;
+                line-height: 32px;
+                opacity: 0.35;
+            }
+            em {
+                a {
+                    margin-right: 10px;
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+            }
+            .more-info-section-wrapper {
+                display: flex;
+                width: 100%;
+                gap: 20px;
+                .more-info-section {
+                    flex: 1;
+                    width: 100%;
+                }
+            }
+            .more-info-section {
+                border: 1px solid $gray;
+                background-color: $white;
+                width: 100%;
+                padding: 30px;
+                border-radius: 12px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                gap: 15px;
+                box-sizing: border-box;
+                .more-info-section-title {
+                    position: absolute;
+                    background: white;
+                    top: -19px;
+                    left: 30px;
+                    padding: 10px 25px;
+                }
+                p {
+                    border-bottom: 1px solid $gray;
+                    padding-bottom: 20px;
+                    opacity: 1;
+                    display: flex;
+                    .more-info-section-highlight-text {
+                        margin-right: auto;
+                    }
+                    &:last-of-type {
+                        border: none;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .selected-work-cta {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        .button {
+            flex: 1;
+        }
+    }
+    .small-horizontal-work-panel {
+        display: flex;
+        .selected-work {
+            
+        }
+    }
+}
