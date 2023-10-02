@@ -1,0 +1,70 @@
+.main-navigation {
+    display: flex;
+    background-color: $white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    z-index: 2;
+    .nav-items-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 25px;
+        .nav-items-left {
+            .nav-links-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                @include screen(mobile) {
+                    display: none;
+                }
+            }
+        }
+        .nav-items-left,
+        .nav-items-center,
+        .nav-items-right {
+            flex: 1;
+            display: flex;
+        }
+        .nav-items-left {
+            justify-content: flex-start;
+        }
+        .nav-items-center {
+            justify-content: center;
+        }
+        .nav-items-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .brand-logo {
+            @include Poppins();
+            font-size: 18px;
+            letter-spacing: 0.35px;
+            line-height: 20px;
+            strong {
+                font-weight: 600;
+                margin-right: 3px;
+            }
+        }
+        .nav-links-wrapper {
+            .nav-link {
+                a {
+                    @include Poppins();
+                    font-size: 16px;
+                    font-weight: 300;
+                    &.highlighted-link {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

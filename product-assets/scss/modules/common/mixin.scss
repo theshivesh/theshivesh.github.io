@@ -1,3 +1,61 @@
 $black: #000000;
 $white: #ffffff;
 $gray: #ececec;
+
+// Dark mode specific
+
+$medium-orange: #d2934e;
+$dark-bg: #121212;
+$dark-link: #574ed2;
+$dark-blue: #4e43d7;
+$dark-card: #1c1c1c;
+$dark-text: #f1f1f1;
+
+@mixin Poppins() {
+    font-family: "Poppins", sans-serif;
+}
+@mixin Roboto() {
+    font-family: "Roboto", sans-serif;
+}
+@mixin Raleway() {
+    font-family: "Raleway", sans-serif;
+}
+@mixin Lato() {
+    font-family: "Lato", sans-serif;
+}
+
+// Media Query Handler
+
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 1023px;
+$breakpoint-desktop: $breakpoint-tablet + 1px;
+
+@mixin screen($size, $type: max, $pixels: $breakpoint-mobile) {
+    @if $size == "mobile" {
+        @media screen and ($type + -width: $breakpoint-mobile) {
+            @content;
+        }
+    } @else if $size == "tablet" {
+        @media screen and ($type + -width: $breakpoint-tablet) {
+            @content;
+        }
+    } @else if $size == "only-tablet" {
+        @media screen and (min + -width: $breakpoint-mobile + 1px) and ($type + -width: $breakpoint-tablet) {
+            @content;
+        }
+    } @else if $size == "tablet-and-desktop" {
+        @media screen and (min + -width: $breakpoint-mobile + 1px) {
+            @content;
+        }
+    } @else if $size == "desktop" {
+        @media screen and (min + -width: $breakpoint-desktop) {
+            @content;
+        }
+    } @else if $size == "custom" {
+        @media screen and ($type + -width: $pixels + px) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}

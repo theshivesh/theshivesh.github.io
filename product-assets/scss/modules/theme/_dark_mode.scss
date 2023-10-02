@@ -1,0 +1,45 @@
+body {
+    &.dark-mode {
+        background-color: $dark-bg;
+        a {
+            color: $white;
+            &.highlighted-link {
+                color: $medium-orange;
+            }
+        }
+        .button {
+            background-color: $dark-blue;
+        }
+        .homepage-content-wrapper {
+            p {
+                color: rgba($white, 0.85);
+                &.highlight {
+                    color: $white;
+                }
+                a {
+                    color: $medium-orange;
+                }
+            }
+        }
+        .main-navigation {
+            background: $dark-bg;
+        }
+        .selected-works-container {
+            background-color: $dark-bg;
+        }
+        .selected-work {
+            .selected-work-preview {
+                background-color: $dark-card;
+                .preview-placeholder {
+                    background-color: $medium-orange;
+                }
+            }
+            .selected-work-content {
+                .selected-work-title,
+                .selected-work-description {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

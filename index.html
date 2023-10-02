@@ -15,8 +15,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles/base.css" />
@@ -25,19 +29,57 @@
     <body>
         <!-- Navigation -->
 
-        <!-- <nav class="main-navigation">
+        <nav class="main-navigation">
             <ul class="nav nav-items-container">
-                <li class="nav-item is-active">
-                    <a href="#">Home</a>
+                <li class="nav-items-left">
+                    <a href="#" class="brand-logo hide-on-desktop"
+                        ><strong>S</strong>M</a
+                    >
+                    <ul class="nav-links-wrapper hide-on-mobile">
+                        <li class="nav-link">
+                            <a href="#" class="highlighted-link"
+                                >Selected Pieces</a
+                            >
+                        </li>
+                        <li class="nav-link hide-on-mobile">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="about.html">About</a>
+                <li class="nav-items-center">
+                    <a href="#" class="brand-logo hide-on-mobile"
+                        ><strong>Shivesh</strong>Mishra</a
+                    >
                 </li>
-                <li class="nav-item">
-                    <a href="contact.html">Contact</a>
+                <li class="nav-items-right">
+                    <div class="theme-switcher">
+                        <input
+                            type="checkbox"
+                            id="modeSwitch"
+                            class="toggle-input"
+                        />
+                        <label for="modeSwitch" class="toggle-label"></label>
+                    </div>
+                    <svg
+                        class="ham hamRotate ham8 hide-on-desktop"
+                        viewBox="0 0 100 100"
+                        width="80"
+                        onclick="toggleMenu()"
+                        style="display: none"
+                    >
+                        <path
+                            class="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                        />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path
+                            class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                        />
+                    </svg>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
 
         <!-- Ends -->
 
@@ -48,8 +90,48 @@
                 <p class="highlight">Hi I'm Shivesh 👋</p>
                 <p>
                     Product designer - Currently building experiences at
-                    <a href="https://stck.me" target="_blank">Scrollstack</a>
+                    <a
+                        href="https://stck.me"
+                        class="highlighted-link"
+                        target="_blank"
+                        >Scrollstack</a
+                    >
                 </p>
+            </div>
+            <div class="selected-works-container">
+                <div class="selected-work">
+                    <div
+                        class="selected-work-preview picto"
+                        data-tilt=""
+                        data-tilt-max-glare="0.8"
+                        data-tilt-full-page-listening=""
+                    >
+                        <div class="preview-placeholder"></div>
+                    </div>
+                    <div class="selected-work-content">
+                        <h1 class="selected-work-title">
+                            Picto AI - Revolutionizing Art/Image Creation
+                        </h1>
+                        <p class="selected-work-description">
+                            Within the realms of creativity and technology, I
+                            spearheaded the product design for Picto AI, an
+                            avant-garde project that seamlessly marries
+                            artificial intelligence with artistic brilliance.
+                            <!-- Picto AI empowers authors and storytellers to craft
+                            visually stunning and captivating book covers and
+                            chapter art effortlessly. With its intuitive
+                            interface and cutting-edge algorithms, users can
+                            transform their visions into reality, saving
+                            significant resources previously spent on design
+                            costs. -->
+                        </p>
+                        <div class="buttons-holder">
+                            <a class="button dark-button" href="#">
+                                <span>More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -61,10 +143,22 @@
 
         <!-- Cursor Ends -->
 
+        <!-- SCRIPT FILES START HERE -->
+
         <script
             crossorigin="anonymous"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
         ></script>
+
+        <!-- Vanilla initialization -->
+
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+        ></script>
+
+        <!-- Script for cursor -->
+
         <script>
             const cursor = document.querySelector(".custom-cursor");
             const links = document.querySelectorAll("a");
@@ -103,6 +197,45 @@
 
             document.addEventListener("mouseout", destroyCursor);
         </script>
+
+        <!-- Dark mode -->
+
+        <script>
+            // mode-script.js
+            const body = document.body;
+            const modeSwitch = document.getElementById("modeSwitch");
+
+            function applyMode(mode) {
+                if (mode === "dark") {
+                    body.classList.add("dark-mode");
+                    modeSwitch.checked = true;
+                } else {
+                    body.classList.remove("dark-mode");
+                    modeSwitch.checked = false;
+                }
+            }
+
+            function toggleMode() {
+                body.classList.toggle("dark-mode");
+                const currentMode = body.classList.contains("dark-mode")
+                    ? "dark"
+                    : "light";
+                localStorage.setItem("mode", currentMode);
+            }
+
+            modeSwitch.addEventListener("change", toggleMode);
+
+            // Check for stored mode preference
+            const savedMode = localStorage.getItem("mode");
+            if (savedMode) {
+                applyMode(savedMode);
+            } else if (
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            ) {
+                applyMode("dark");
+            }
+        </script>
+
         <!-- SCRIPT FILES ENDS HERE -->
     </body>
 </html>

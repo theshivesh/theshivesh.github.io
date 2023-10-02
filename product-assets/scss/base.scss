@@ -1,9 +1,11 @@
 @import "./modules/common/mixin";
 @import "./modules/common/_browser_reset";
-@import "./modules/common/background_grid_lines";
+@import "./modules/common/main_navigation";
 @import "./modules/common/cursor";
 
+@import "./modules/theme/dark_mode";
 @import "./modules/ui_elements/button";
+@import "./modules/ui_elements/toggle_switcher";
 
 html {
     cursor: none;
@@ -11,6 +13,7 @@ html {
 }
 
 body {
+    @include Poppins();
     height: 100dvh;
     font-family: "Lato", sans-serif;
     background-color: $white;
@@ -20,8 +23,26 @@ a {
     color: $black;
     cursor: none;
     transition: 0.3s;
+    text-decoration: none;
+    &.highlighted-link {
+        font-weight: 500;
+        color: $dark-link;
+    }
 }
 .section-wrapper {
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.hide-on-desktop {
+    display: none;
+    @include screen(mobile) {
+        display: flex;
+    }
+}
+.hide-on-mobile {
+    display: flex;
+    @include screen(mobile) {
+        display: none;
+    }
 }
