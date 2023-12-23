@@ -1,0 +1,59 @@
+.dark-mode {
+    .selected-work {
+        &.picto-work {
+            .ai-picto-customise-preview-container {
+                figure {
+                    img {
+                        box-shadow: 0 10px 10px 1px rgba($blue, 0.06);
+                    }
+                }
+            }
+
+            .ai-picto-customise-options-container {
+                background: $dark-card-600;
+                border: 1px solid $dark-card-600;
+                box-shadow: 0 10px 10px 1px rgba($blue, 0.1);
+                .ai-picto-customise-title-input {
+                    input {
+                        background-color: darken($dark-card-600, 4%);
+                        border: 1px solid darken($dark-card-600, 4%);
+                        color: $dark-text;
+                    }
+                }
+                .ai-picto-customise-text-alignment {
+                    .nav-pills {
+                        background: darken($dark-card-600, 4%);
+                        border: 1px solid darken($dark-card-600, 4%);
+                        box-shadow: 0 10px 10px 1px rgba($blue, 0.06);
+                        input[type="radio"] {
+                            + label {
+                                img {
+                                    height: 16px;
+                                    filter: invert(100%) sepia(0%)
+                                        saturate(7500%) hue-rotate(151deg)
+                                        brightness(99%) contrast(99%);
+                                }
+                            }
+                        }
+                    }
+                }
+                .ai-picto-customise-font-family {
+                    .nav-pills {
+                        input[type="radio"] {
+                            + label {
+                                border: 1px solid lighten($dark-card, 10%);
+                            }
+                            &:checked,
+                            &.is-active {
+                                + label {
+                                    background: darken($dark-card-600, 4%);
+                                    border-color: $blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

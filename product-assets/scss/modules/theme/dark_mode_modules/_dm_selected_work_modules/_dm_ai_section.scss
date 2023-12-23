@@ -1,0 +1,29 @@
+.dark-mode {
+    .selected-work {
+        &.ai-work {
+            .writing-block {
+                background: lighten($dark-card-600, 2%);
+                box-shadow: 0 0 13px 2px rgba($dark-card, 0.09);
+
+                .button {
+                    background-color: lighten($blue, 10%);
+
+                    img {
+                        box-shadow: 0 10px 10px 1px rgba($blue, 0.06);
+                    }
+                }
+                p {
+                    color: $dark-text;
+                }
+                .dropcap-text {
+                    border: 2px solid $dark-text;
+                }
+            }
+            .generated-image-wrapper {
+                .generated-image {
+                    box-shadow: 0 0 13px 2px rgba($white, 0.06);
+                }
+            }
+        }
+    }
+}

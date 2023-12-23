@@ -1,0 +1,17 @@
+@import "./_dm_selected_work_modules/dm_picto";
+@import "./_dm_selected_work_modules/dm_custom_domain";
+@import "./_dm_selected_work_modules/dm_ai_section";
+
+.dark-mode {
+    .selected-work-section {
+        &.is-highlighted {
+            background-color: $dark-highlight;
+        }
+        .selected-work-content {
+            .selected-work-title,
+            .selected-work-description {
+                color: $dark-text;
+            }
+        }
+    }
+}

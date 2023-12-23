@@ -6,19 +6,20 @@
 // Section specific
 
 @import "./picto";
+@import "./custom_domain";
+@import "./ai_section";
 
-.selected-works-container {
+.selected-work-section {
     padding: 50px 30px;
     box-sizing: border-box;
-    background-color: $gray-100;
+    height: 100dvh;
     position: relative;
+    &.is-highlighted {
+        background-color: #fcfcff;
+    }
     @include screen(mobile) {
         padding: 75px 30px;
-    }
-    h2 {
-        @include Serif();
-        font-size: 78px;
-        line-height: 92px;
+        height: initial;
     }
 }
 
@@ -31,6 +32,7 @@
     max-width: 1200px;
     margin: 0 auto;
     @include screen(tablet) {
+        height: initial;
         flex-direction: column;
     }
 }

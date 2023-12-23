@@ -1,0 +1,106 @@
+.dark-mode {
+    .selected-work {
+        &.custom-domain-work {
+            .user-mini-profile {
+                background: lighten($dark-highlight, 4%);
+                border: 1.02px solid lighten($dark-highlight, 4%);
+                box-shadow: 0 10px 10px 1px rgba(#302d37, 0.1);
+            }
+            .user-photo-container {
+                figure {
+                    box-shadow: 0 0 0 3px $green;
+
+                    img {
+                        border: 3px solid $dark-highlight;
+                    }
+                }
+                .stck-pro-badge {
+                    background-color: $dark-highlight;
+
+                    span {
+                        color: $green;
+                    }
+                }
+            }
+            .stars-wrapper {
+                .blinking-star {
+                }
+            }
+            .user-mini-profile-content {
+                .creator-name-wrapper {
+                    h1 {
+                        color: $dark-text;
+                    }
+                }
+                h5 {
+                    color: $dark-text;
+                }
+            }
+            .mini-profile-meta {
+                a {
+                    color: $dark-text;
+                }
+                h4 {
+                    color: $dark-text;
+                    span {
+                        color: $dark-text;
+                    }
+                }
+            }
+
+            .domain-toggle-container {
+                background: linear-gradient(270deg, #152019, #14191f);
+                border: 1.02px solid rgba($dark-card, 0.25);
+
+                .toggle-switch {
+                    input[type="checkbox"] {
+                        + label {
+                            background: lighten($dark-highlight, 12%);
+                            &::after {
+                                background: $green;
+                            }
+                        }
+                        &:checked {
+                            + label {
+                                background: $green;
+                                box-shadow: 0 10px 10px 1px
+                                    rgba(142, 120, 231, 0.2);
+                                &::after {
+                                    background: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .old-stack-name,
+                .domain-address {
+                    color: $dark-text;
+                }
+            }
+            .floating-elements {
+                .placeholder-card {
+                    &.placeholder-card-1 {
+                        opacity: 0.5;
+                        background-image: linear-gradient(
+                            180deg,
+                            $dark-bg 79%,
+                            #302d37 100%
+                        );
+                    }
+                    &.placeholder-card-2 {
+                        opacity: 0.3;
+                        background-image: linear-gradient(
+                            180deg,
+                            $dark-bg 79%,
+                            #302d37 100%
+                        );
+                    }
+                }
+                .globe-wrapper {
+                    background: rgba($dark-card, 0.8);
+                    box-shadow: 0 10px 10px 1px rgba($dark-highlight, 0.9);
+                }
+            }
+        }
+    }
+}

@@ -1,24 +1,6 @@
 .highlighted-text {
-    color: $dark-blue;
+    color: $blue;
+    &.green-highlighted-text {
+        color: $green;
+    }
 }
-
-// Defining bolds
-// h1,
-// h2,
-// h3,
-// strong {
-//     font-weight: 700;
-// }
-
-// h1 {
-//     font-size: 68px;
-//     line-height: 120%;
-// }
-// h2 {
-//     font-size: 32px;
-//     line-height: 120%;
-// }
-// h3 {
-//     font-size: 68px;
-//     line-height: 120%;
-// }

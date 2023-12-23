@@ -1,0 +1,78 @@
+.blinking-star {
+    -webkit-animation: blink-animation 2.35s infinite,
+        scale-animation 2.35s infinite;
+    animation: blink-animation 2.35s infinite, scale-animation 2.35s infinite;
+}
+
+.star-2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.star-3 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+@-webkit-keyframes blink-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes blink-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes scale-animation {
+    0% {
+        transform: scale(0.5, 0.5);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.5, 0.5);
+    }
+}
+@keyframes scale-animation {
+    0% {
+        transform: scale(0.5, 0.5);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@keyframes progress-forward {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 50%;
+    }
+    50% {
+        width: 75%;
+    }
+    75% {
+        width: 85%;
+    }
+    100% {
+        width: 100%;
+    }
+}

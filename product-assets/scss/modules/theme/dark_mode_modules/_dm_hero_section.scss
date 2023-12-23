@@ -1,0 +1,13 @@
+.dark-mode {
+    .hero-section {
+        .hero-section-content {
+            .hero-section-title,
+            .hero-section-description {
+                color: $dark-text;
+            }
+            .hero-section-description {
+                opacity: 0.8;
+            }
+        }
+    }
+}

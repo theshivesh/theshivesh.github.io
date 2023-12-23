@@ -1,0 +1,156 @@
+.selected-work {
+    &.ai-work {
+        @include Poppins();
+
+        .ai-section-preview-elements-container {
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            @include screen(mobile) {
+                height: 300px;
+            }
+        }
+        .ai-writing-wrapper {
+            position: relative;
+            transform: translateZ(30px);
+        }
+        .writing-block {
+            background: $white;
+            box-shadow: 0 0 13px 2px rgba($black, 0.06);
+            border-radius: 21px;
+            padding: 25px;
+            width: 285px;
+            box-sizing: border-box;
+            position: relative;
+            @include screen(mobile) {
+                width: 228px;
+                height: 208px;
+                padding: 25px;
+            }
+            .button {
+                padding: 12px 20px;
+                background-color: lighten($purple, 10%);
+                gap: 10px;
+                position: absolute;
+                top: -26px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: max-content;
+                z-index: 0;
+                @include screen(mobile) {
+                    padding: 11px 13px;
+                    gap: 8px;
+                    img {
+                        width: 13px;
+                    }
+                }
+                span {
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: $white;
+                }
+                img {
+                    width: 17px;
+                    height: auto;
+                    box-shadow: 0 10px 10px 1px rgba(#9b9b9b, 0.28);
+                    @include screen(mobile) {
+                        width: 13px;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                font-size: 12px;
+                line-height: 19px;
+                word-break: break-word;
+                &:has(.dropcap-text) {
+                    overflow: hidden;
+                }
+                @include screen(mobile) {
+                    font-size: 11px;
+                    line-height: 16px;
+                }
+            }
+            .dropcap-text {
+                @include Serif();
+                float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 53px;
+                font-size: 36px;
+                line-height: 37px;
+                font-weight: 900;
+                text-align: center;
+                text-transform: capitalize;
+                border: 2px solid $black;
+                border-radius: 0 12px 12px 12px;
+                margin: 5px 10px 0 0;
+                box-sizing: border-box;
+                @include screen(mobile) {
+                    width: 43px;
+                    height: 43px;
+                    font-size: 27px;
+                    line-height: 37px;
+                    border-radius: 0 6px 6px 6px;
+                    margin: 3px 8px 0 0;
+                }
+            }
+        }
+        .generated-image-wrapper {
+            position: relative;
+            margin: -70px 0 0 70px;
+            transform: translateZ(70px);
+            @include screen(mobile) {
+                transform: translateZ(50px);
+                margin: -120px 0 0 70px;
+            }
+            .generated-image {
+                width: 245px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                box-shadow: 0 0 13px 2px rgba($black, 0.06);
+                object-fit: cover;
+                border-radius: 21px;
+                @include screen(mobile) {
+                    width: 200px;
+                }
+            }
+            .progress-container {
+                background: $green;
+                box-shadow: 0 7px 13px 3px rgba(#9b9b9b, 0.1);
+                border-radius: 999px;
+                padding: 8px 12px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                margin-top: -20px;
+                z-index: 0;
+                position: relative;
+                min-width: 160px;
+                width: max-content;
+                margin: -35px auto;
+            }
+            .progress-message {
+                font-size: 9px;
+                line-height: 11px;
+                color: $white;
+                font-weight: 500;
+            }
+            .progress-wrapper {
+                width: 100%;
+                max-width: 30px;
+                .progress {
+                    height: 4px;
+                    .progress-bar {
+                        background-color: $white;
+                        animation: progress-forward 6s infinite;
+                    }
+                }
+            }
+        }
+    }
+}

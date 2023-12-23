@@ -2,15 +2,20 @@ $black: #000000;
 $white: #ffffff;
 $gray: #ececec;
 $gray-100: #fafafa;
+$blue: #1f63d6;
 
 // Dark mode specific
 
 $medium-orange: #d2934e;
+$green: #168039;
 $dark-bg: #121212;
 $dark-link: #574ed2;
 $dark-blue: #4e43d7;
+$purple: #531ad5;
 $dark-card: #1c1c1c;
+$dark-card-600: #191919;
 $dark-text: #f1f1f1;
+$dark-highlight: #0e0e0f;
 
 @mixin Poppins() {
     font-family: "Poppins", sans-serif;

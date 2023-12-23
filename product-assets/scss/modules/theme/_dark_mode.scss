@@ -1,3 +1,6 @@
+@import "./dark_mode_modules/dm_hero_section";
+@import "./dark_mode_modules/dm_selected_work_base";
+
 body {
     &.dark-mode {
         background-color: $dark-bg;
@@ -8,37 +11,25 @@ body {
             }
         }
         .button {
-            background-color: $dark-blue;
-        }
-        .homepage-content-wrapper {
-            p {
-                color: rgba($white, 0.85);
-                &.highlight {
-                    color: $white;
+            background-color: $blue;
+            &.outlined-button {
+                background-color: transparent;
+                border-color: lighten($dark-card, 10%);
+                span {
+                    color: $dark-text;
                 }
-                a {
-                    color: $medium-orange;
-                }
+            }
+            span {
+                color: $white;
             }
         }
         .main-navigation {
             background: $dark-bg;
         }
-        .selected-works-container {
-            background-color: $dark-bg;
-        }
-        .selected-work {
-            .selected-work-preview {
-                background-color: $dark-card;
-                .preview-placeholder {
-                    background-color: $medium-orange;
-                }
-            }
-            .selected-work-content {
-                .selected-work-title,
-                .selected-work-description {
-                    color: $white;
-                }
+        .highlighted-text {
+            color: $blue;
+            &.green-highlighted-text {
+                color: $green;
             }
         }
     }
