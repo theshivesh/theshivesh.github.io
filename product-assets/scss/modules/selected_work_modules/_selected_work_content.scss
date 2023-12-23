@@ -1,0 +1,52 @@
+.selected-work {
+    .selected-work-content {
+        @include Poppins();
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include screen(mobile) {
+            align-items: initial;
+        }
+        .selected-work-title {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 68px;
+            margin-bottom: 10px;
+            @include screen(mobile) {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+            }
+        }
+        .selected-work-description {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 30px;
+            color: rgba(0, 0, 0, 0.6);
+            @include screen(mobile) {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 28px;
+            }
+        }
+        .buttons-holder {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include screen(mobile) {
+                flex-direction: column;
+            }
+            a {
+                width: 100%;
+            }
+        }
+        .button {
+            min-width: 270px;
+            @include screen(mobile) {
+                min-width: auto;
+                width: 100%;
+            }
+        }
+    }
+}

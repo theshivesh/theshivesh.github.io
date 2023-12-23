@@ -1,0 +1,13 @@
+.selected-work {
+    .selected-work-preview-elements-wrapper {
+    }
+    .selected-work-preview {
+        flex: 1;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

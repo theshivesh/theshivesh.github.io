@@ -1,7 +1,12 @@
 @import "./modules/common/mixin.scss";
 
+@import "./modules/selected_work_modules/selected_work_base";
+
 .homepage-container {
     @include Lato();
+    height: calc(100dvh - 80px);
+    margin-top: 80px;
+    position: relative;
 }
 .homepage-image-wrapper {
     position: relative;
@@ -41,83 +46,103 @@
     }
 }
 
-.selected-works-container {
-    padding: 50px 30px;
-    box-sizing: border-box;
-    background-color: $white;
-}
-.selected-work {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    height: 100dvh;
-    max-width: 1200px;
-    margin: 0 auto;
-    @include screen(tablet) {
-        flex-direction: column;
-    }
-    .selected-work-preview {
-        height: 500px;
-        width: 100%;
-        display: block;
-        background-color: $gray;
-        border-radius: 24px;
-        flex: 1;
-        transform-style: preserve-3d;
-        transform: perspective(1000px);
-        position: relative;
+.hero-section {
+    .hero-section-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
-        .preview-placeholder {
-            transform: translateZ(80px);
-            height: 100px;
-            width: 100px;
-            background-color: $dark-link;
-            border-radius: 50%;
-        }
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 50px;
+        height: 100%;
+        position: relative;
     }
-    .selected-work-content {
-        @include Poppins();
+    .hero-section-content,
+    .hero-section-image-container {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    }
+    .hero-section-content {
         @include screen(mobile) {
-            align-items: initial;
+            padding: 0 30px;
+            box-sizing: border-box;
         }
-        .selected-work-title {
-            font-size: 54px;
-            font-weight: 800;
-            line-height: 72px;
-            margin-bottom: 10px;
+        .hero-section-title {
+            @include Serif();
+            font-size: 68px;
+            line-height: 82px;
             @include screen(mobile) {
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 36px;
+                font-size: 32px;
+                line-height: 140%;
             }
         }
-        .selected-work-description {
+        .hero-section-description {
+            @include Raleway();
             font-size: 20px;
             line-height: 32px;
-            margin-bottom: 35px;
+            margin-top: 30px;
+            font-weight: 400;
+            opacity: 0.7;
             @include screen(mobile) {
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 28px;
-                margin-bottom: 28px;
+                margin-top: 25px;
             }
         }
-        .button {
-            min-width: 312px;
-            @include screen(mobile) {
-                min-width: auto;
-                width: 100%;
-            }
+    }
+    .hero-section-image-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        figure,
+        picture {
+            margin: 0;
+            line-height: 0;
+        }
+        img {
+            width: auto;
+            height: 580px;
+            border-radius: 24px;
+        }
+    }
+}
+.section-main-title-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+.section-main-title-container {
+    transition: transform 0.3s ease;
+    animation: moveLeftRight 720s linear infinite;
+    animation-direction: normal;
+    display: flex;
+    gap: 30px;
+    .section-main-title {
+        @include Serif();
+        font-size: 102px;
+        line-height: 112px;
+        text-align: center;
+        text-wrap: nowrap;
+        @include screen(mobile) {
+            font-size: 52px;
+            line-height: 53px;
         }
     }
 }
 
+.selected-work-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20dvh;
+}
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 @media (max-width: 767px) {
     .homepage-content-wrapper {
         gap: 15px;

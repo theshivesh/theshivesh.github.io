@@ -2,10 +2,13 @@
 @import "./modules/common/_browser_reset";
 @import "./modules/common/main_navigation";
 @import "./modules/common/cursor";
+@import "./modules/common/typography";
+@import "./modules/common/common_styles";
 
 @import "./modules/theme/dark_mode";
 @import "./modules/ui_elements/button";
 @import "./modules/ui_elements/toggle_switcher";
+@import "./modules/ui_elements/work-cards-container.scss";
 
 html {
     cursor: none;

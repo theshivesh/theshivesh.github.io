@@ -1,0 +1,36 @@
+// Common modules
+
+@import "./selected_work_content";
+@import "./selected_work_preview";
+
+// Section specific
+
+@import "./picto";
+
+.selected-works-container {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: $gray-100;
+    position: relative;
+    @include screen(mobile) {
+        padding: 75px 30px;
+    }
+    h2 {
+        @include Serif();
+        font-size: 78px;
+        line-height: 92px;
+    }
+}
+
+.selected-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 100dvh;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include screen(tablet) {
+        flex-direction: column;
+    }
+}
