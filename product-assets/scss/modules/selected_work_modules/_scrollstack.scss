@@ -1,0 +1,239 @@
+.selected-work {
+    &.scrollstack-work {
+        @include Poppins();
+        .selected-work-preview {
+            display: block;
+            .floating-elements {
+                width: 360px;
+                height: 212px;
+                position: absolute;
+                top: 80px;
+                @include screen(mobile) {
+                    width: 274px;
+                    height: 162px;
+                }
+                .rings-wrapper {
+                    img {
+                        position: absolute;
+                        width: 16px;
+                        height: auto;
+                        @include screen(mobile) {
+                            width: 12px;
+                        }
+                        &.oval {
+                            width: 95px;
+                            @include screen(mobile) {
+                                width: 72px;
+                            }
+                        }
+                        &.oval-ring {
+                            bottom: -43%;
+                            right: -4%;
+                            @include screen(mobile) {
+                                bottom: -55%;
+                                right: 2%;
+                            }
+                        }
+                        &.oval-solid {
+                            bottom: -48%;
+                            right: 8%;
+                            @include screen(mobile) {
+                                bottom: -60%;
+                                right: 15%;
+                            }
+                        }
+                        &.ring-1 {
+                            top: -5%;
+                            left: 5px;
+                            @include screen(mobile) {
+                                top: 4%;
+                                left: -5px;
+                            }
+                        }
+                        &.ring-2 {
+                            top: 80%;
+                            right: -36px;
+                            @include screen(mobile) {
+                                top: 90%;
+                                right: -16px;
+                            }
+                        }
+                    }
+                }
+                .coins-wrapper {
+                    .coin {
+                        position: absolute;
+                        height: 48px;
+                        width: 48px;
+                        animation: float 6s ease-in-out infinite;
+                        z-index: 3;
+                        @include screen(mobile) {
+                            width: 36px;
+                            height: 36px;
+                        }
+                        &.coin-1 {
+                            top: 75px;
+                            right: -13px;
+                        }
+                        &.coin-2 {
+                            bottom: -48px;
+                            left: -20px;
+                        }
+                        &.coin-3 {
+                            bottom: -75px;
+                            right: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .scrollstack-preview-elements-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .scrollstack-cards-container {
+            .scrollstack-cards {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 262px;
+                @include screen(mobile) {
+                    width: 320px;
+                }
+                .card {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+                    padding: 30px;
+                    box-sizing: border-box;
+                    width: 360px;
+                    height: 212px;
+                    background: $white;
+                    border: 1px solid $gray;
+                    box-shadow: 0 10px 10px 1px rgba($gray, 0.1);
+                    border-radius: 22px;
+                    position: absolute;
+                    transform: scale(0.75);
+                    animation-name: cards-animation;
+                    animation-iteration-count: infinite;
+                    animation-duration: 6s;
+                    @include screen(mobile) {
+                        width: 274px;
+                        height: 162px;
+                        gap: 10px;
+                        padding: 20px;
+                        left: 7%;
+                    }
+                    &.card-1 {
+                        animation-delay: 1s;
+                    }
+                    &.card-2 {
+                        animation-delay: 3s;
+                    }
+                    &.card-3 {
+                        animation-delay: 5s;
+                    }
+                }
+                .user-meta-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                }
+                .user-meta-image {
+                    height: 66px;
+                    width: 66px;
+                    min-width: 66px;
+                    object-fit: cover;
+                    border-radius: 999px;
+                    @include screen(mobile) {
+                        height: 50px;
+                        width: 50px;
+                        min-width: 50px;
+                    }
+                }
+                figure {
+                    margin: 0;
+                    line-height: 0;
+                }
+                .user-meta-content {
+                    display: flex;
+                    flex-direction: column;
+                    .user-name {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 28px;
+                        @include screen(mobile) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                    .user-address {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        color: rgba($black, 0.5);
+                        @include screen(mobile) {
+                            font-size: 11px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+            .user-notification-message {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 21px;
+                margin: 0;
+                @include screen(mobile) {
+                    font-size: 11px;
+                    line-height: 19px;
+                }
+            }
+
+            .user-notification-time {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15px;
+                color: rgba($black, 0.5);
+                @include screen(mobile) {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+        .total-revenue-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            .revenue-intend {
+                font-size: 15px;
+                color: rgba($black, 0.5);
+                line-height: 28px;
+                font-weight: 500;
+            }
+            .revenue-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+            .revenue {
+                font-size: 46px;
+                font-weight: 700;
+            }
+            img {
+                width: 34px;
+                height: auto;
+            }
+        }
+    }
+}

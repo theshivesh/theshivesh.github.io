@@ -1,12 +1,19 @@
 @import "./_dm_selected_work_modules/dm_picto";
 @import "./_dm_selected_work_modules/dm_custom_domain";
 @import "./_dm_selected_work_modules/dm_ai_section";
+@import "./_dm_selected_work_modules/dm_scrollstack";
 
 .dark-mode {
     .selected-work-section {
         &.is-highlighted {
             background-color: $dark-highlight;
         }
+        // &.is-highlighted-blue {
+        //     background-color: rgba($blue, 0.04);
+        // }
+        // &.is-highlighted-yellow {
+        //     background-color: rgba($yellow, 0.04);
+        // }
         .selected-work-content {
             .selected-work-title,
             .selected-work-description {

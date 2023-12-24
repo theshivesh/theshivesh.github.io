@@ -1,0 +1,55 @@
+.dark-mode {
+    .selected-work {
+        &.scrollstack-work {
+            .selected-work-preview {
+                display: block;
+                .floating-elements {
+                    .rings-wrapper {
+                        img {
+                            &.oval-ring,
+                            &.ring-1,
+                            &.ring-2 {
+                                filter: invert(100%) sepia(80%) saturate(0%)
+                                    hue-rotate(207deg) brightness(40%)
+                                    contrast(101%);
+                            }
+                        }
+                    }
+                }
+            }
+            .scrollstack-cards-container {
+                .scrollstack-cards {
+                    .card {
+                        background: lighten($dark-highlight, 4%);
+                        border: lighten($dark-highlight, 4%);
+                        box-shadow: 0 10px 10px 1px rgba(#302d37, 0.1);
+                    }
+
+                    .user-meta-content {
+                        .user-name {
+                            color: $dark-text;
+                        }
+                        .user-address {
+                            color: rgba($dark-text, 0.7);
+                        }
+                    }
+                }
+                .user-notification-message {
+                    color: $dark-text;
+                }
+
+                .user-notification-time {
+                    color: rgba($dark-text, 0.7);
+                }
+            }
+            .total-revenue-block {
+                .revenue-intend {
+                    color: rgba($dark-text, 0.7);
+                }
+                .revenue {
+                    color: $dark-text;
+                }
+            }
+        }
+    }
+}

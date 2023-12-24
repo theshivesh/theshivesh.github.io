@@ -8,6 +8,7 @@
 @import "./picto";
 @import "./custom_domain";
 @import "./ai_section";
+@import "./scrollstack";
 
 .selected-work-section {
     padding: 50px 30px;
@@ -17,6 +18,12 @@
     &.is-highlighted {
         background-color: #fcfcff;
     }
+    // &.is-highlighted-blue {
+    //     background-color: rgba($blue, 0.04);
+    // }
+    // &.is-highlighted-yellow {
+    //     background-color: rgba($yellow, 0.04);
+    // }
     @include screen(mobile) {
         padding: 75px 30px;
         height: initial;
