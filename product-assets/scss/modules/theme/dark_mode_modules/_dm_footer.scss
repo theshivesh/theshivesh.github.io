@@ -1,0 +1,47 @@
+.dark-mode {
+    .footer-container {
+        background-color: $dark-card-600;
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a {
+                color: $white;
+            }
+            p {
+                color: rgba($white, 0.6);
+            }
+        }
+        .footer-links-container {
+            .footer-link {
+                border: 1px solid lighten($dark-card, 4%);
+                background-color: $dark-card-600;
+
+                &:hover {
+                    background-color: darken($dark-card-600, 4%);
+                }
+                &.linkedin-link {
+                    &:hover {
+                        background-color: rgba($linkedin-color, 0.1);
+                        i {
+                            color: $linkedin-color;
+                        }
+                    }
+                }
+                &.instagram-link {
+                    &:hover {
+                        background-color: rgba($instagram-color, 0.1);
+                        i {
+                            color: $instagram-color;
+                        }
+                    }
+                }
+                i {
+                    font-size: 14px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

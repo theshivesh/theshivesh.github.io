@@ -1,0 +1,80 @@
+.footer-container {
+    display: flex;
+    background-color: $white;
+    width: 100%;
+    margin: 0;
+    .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.35px;
+            line-height: 20px;
+            color: $black;
+            text-decoration: none;
+            strong {
+                font-weight: 600;
+                margin-right: 3px;
+            }
+        }
+        p {
+            @include Poppins();
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: 300;
+            color: rgba($black, 0.6);
+        }
+    }
+    .footer-links-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .footer-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            width: 45px;
+            border: 1px solid $gray;
+            background-color: $white;
+            border-radius: 999px;
+            &:hover {
+                background-color: $gray;
+            }
+            &.linkedin-link {
+                &:hover {
+                    background-color: rgba($linkedin-color, 0.1);
+                    i {
+                        color: $linkedin-color;
+                    }
+                }
+            }
+            &.instagram-link {
+                &:hover {
+                    background-color: rgba($instagram-color, 0.1);
+                    i {
+                        color: $instagram-color;
+                    }
+                }
+            }
+            i {
+                font-size: 14px;
+                color: $black;
+            }
+        }
+    }
+}

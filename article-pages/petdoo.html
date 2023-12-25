@@ -1,0 +1,473 @@
+<html lang="en" class="no-js">
+    <head>
+        <title>Shivesh Mishra</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/homepage.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+
+        <nav class="main-navigation">
+            <ul class="nav nav-items-container">
+                <li class="nav-items-left">
+                    <a href="#" class="brand-logo hide-on-desktop"
+                        ><strong>S</strong>M</a
+                    >
+                    <ul class="nav-links-wrapper hide-on-mobile">
+                        <li class="nav-link">
+                            <a href="#" class="highlighted-link"
+                                >Selected Pieces</a
+                            >
+                        </li>
+                        <li class="nav-link hide-on-mobile">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-items-center">
+                    <a href="#" class="brand-logo hide-on-mobile"
+                        ><strong>Shivesh</strong>Mishra</a
+                    >
+                </li>
+                <li class="nav-items-right">
+                    <div class="theme-switcher">
+                        <input
+                            type="checkbox"
+                            id="modeSwitch"
+                            class="toggle-input"
+                        />
+                        <label for="modeSwitch" class="toggle-label"></label>
+                    </div>
+                    <svg
+                        class="ham hamRotate ham8 hide-on-desktop"
+                        viewBox="0 0 100 100"
+                        width="80"
+                        onclick="toggleMenu()"
+                        style="display: none"
+                    >
+                        <path
+                            class="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                        />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path
+                            class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                        />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Ends -->
+
+        <!-- Cursor -->
+
+        <div class="custom-cursor"></div>
+
+        <!-- Cursor Ends -->
+
+        <!-- SCRIPT FILES START HERE -->
+
+        <!-- jQuery initialisation -->
+
+        <script
+            crossorigin="anonymous"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        ></script>
+
+        <!-- Vanilla initialization -->
+
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+        ></script>
+
+        <!-- Script for Vanilla tilt js -->
+        <script type="text/javascript">
+            VanillaTilt.init(
+                document.querySelector(
+                    ".selected-work-preview-elements-wrapper"
+                ),
+                {
+                    max: 6,
+                    speed: 3000,
+                    perspective: 1000,
+                    gyroscope: true, // Enable gyroscope-based tilt
+                }
+            );
+        </script>
+
+        <!-- Ends -->
+
+        <!-- Script Intersection observer to run some animation once the section is in view.  -->
+        <script>
+            function useIntersectionObserver(targetSelector, callback) {
+                const target = document.querySelector(targetSelector);
+                if (!target) {
+                    console.error(
+                        `No element matches the selector: "${targetSelector}".`
+                    );
+                    return;
+                }
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                callback();
+                                observer.disconnect();
+                            }
+                        });
+                    },
+                    {
+                        root: null,
+                        rootMargin: "0px",
+                        threshold: 0.5,
+                    }
+                );
+                observer.observe(target);
+            }
+        </script>
+        <!-- Ends  -->
+
+        <!-- Script to disable vanilla tilt on mobile devices -->
+
+        <script>
+            // Check if the user is on a mobile device
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                    navigator.userAgent
+                );
+            }
+
+            // Disable Vanilla Tilt.js on mobile devices
+            if (isMobileDevice()) {
+                // Remove the tilt effect or any event listeners related to it
+                // For example:
+                // Remove the tilt effect from all elements with the "tilt" class
+                const tiltElements = document.querySelectorAll(".tilt");
+                tiltElements.forEach((element) => {
+                    // Assuming you have initialized Vanilla Tilt on these elements
+                    VanillaTilt.init(element);
+                    element.vanillaTilt.destroy(); // Disable the tilt effect
+                });
+            }
+        </script>
+
+        <!-- Script for cursor -->
+
+        <script>
+            const cursor = document.querySelector(".custom-cursor");
+            const links = document.querySelectorAll("a");
+            let isCursorInited = false;
+
+            const initCursor = () => {
+                cursor.classList.add("custom-cursor--init");
+                isCursorInited = true;
+            };
+
+            const destroyCursor = () => {
+                cursor.classList.remove("custom-cursor--init");
+                isCursorInited = false;
+            };
+
+            links.forEach((link) => {
+                link.addEventListener("mouseover", () => {
+                    cursor.classList.add("custom-cursor--link");
+                });
+
+                link.addEventListener("mouseout", () => {
+                    cursor.classList.remove("custom-cursor--link");
+                });
+            });
+
+            document.addEventListener("mousemove", (e) => {
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                if (!isCursorInited) {
+                    initCursor();
+                }
+
+                cursor.style = `translate: ${mouseX}px ${mouseY}px`;
+            });
+
+            document.addEventListener("mouseout", destroyCursor);
+        </script>
+
+        <!-- Dark mode -->
+
+        <script>
+            // mode-script.js
+            const body = document.body;
+            const modeSwitch = document.getElementById("modeSwitch");
+
+            function applyMode(mode) {
+                if (mode === "dark") {
+                    body.classList.add("dark-mode");
+                    modeSwitch.checked = true;
+                } else {
+                    body.classList.remove("dark-mode");
+                    modeSwitch.checked = false;
+                }
+            }
+
+            function toggleMode() {
+                body.classList.toggle("dark-mode");
+                const currentMode = body.classList.contains("dark-mode")
+                    ? "dark"
+                    : "light";
+                localStorage.setItem("mode", currentMode);
+            }
+
+            modeSwitch.addEventListener("change", toggleMode);
+
+            // Check for stored mode preference
+            const savedMode = localStorage.getItem("mode");
+            if (savedMode) {
+                applyMode(savedMode);
+            } else if (
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            ) {
+                applyMode("dark");
+            }
+        </script>
+
+        <!-- scrolling -->
+
+        <script>
+            document.addEventListener("keydown", function (event) {
+                // Check if the pressed key is "a" or "s"
+                if (event.key === "a" || event.key === "s") {
+                    // Prevent the default behavior of the keys
+                    event.preventDefault();
+
+                    // Determine the direction and amount of scroll
+                    var scrollAmount = 100; // Adjust this value as needed
+                    var direction = event.key === "a" ? -1 : 1;
+
+                    // Perform the scroll
+                    window.scrollBy({
+                        top: direction * scrollAmount,
+                        left: 0,
+                        behavior: "smooth", // You can use 'auto' for instant scrolling
+                    });
+                }
+            });
+        </script>
+
+        <!-- AI PICTO -->
+
+        <script>
+            function scriptForFlexFont() {
+                function getVisibleDiv() {
+                    let divs = Array.from(
+                        document.querySelectorAll(".ai-picto-card")
+                    );
+                    return divs.find(
+                        (div) => window.getComputedStyle(div).display !== "none"
+                    );
+                }
+
+                flexFontAuthor = function (visibleDiv) {
+                    var flexTextAuthorName =
+                        visibleDiv.getElementsByClassName("flexTextAuthorName");
+                    for (var i = 0; i < flexTextAuthorName.length; i++) {
+                        var relFontsize =
+                            flexTextAuthorName[i].offsetWidth * 0.045;
+                        flexTextAuthorName[i].style.fontSize =
+                            relFontsize + "px";
+                    }
+                };
+
+                flexFont = function (visibleDiv) {
+                    var flexTextTitle =
+                        visibleDiv.getElementsByClassName("flexTextTitle");
+                    for (var i = 0; i < flexTextTitle.length; i++) {
+                        var relFontsize = flexTextTitle[i].offsetWidth * 0.15;
+                        flexTextTitle[i].style.fontSize = relFontsize + "px";
+                    }
+                };
+
+                let divs = Array.from(
+                    document.querySelectorAll(".ai-picto-card")
+                );
+                let currentIndex = 0;
+
+                let observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            let visibleDiv = entry.target;
+                            flexFont(visibleDiv);
+                            flexFontAuthor(visibleDiv);
+                            observer.unobserve(visibleDiv);
+                        }
+                    });
+                });
+
+                divs.forEach((div) => {
+                    observer.observe(div);
+                });
+
+                // Preload fonts for all .ai-picto-card elements
+                divs.forEach((div) => {
+                    let fontElements = Array.from(
+                        div.querySelectorAll("link[rel='preload'][as='font']")
+                    );
+                    fontElements.forEach((fontElement) => {
+                        if (fontElement.href) {
+                            let fontLink = document.createElement("link");
+                            fontLink.rel = "stylesheet";
+                            fontLink.href = fontElement.href;
+                            document.head.appendChild(fontLink);
+                        }
+                    });
+                });
+
+                setInterval(() => {
+                    let currentDiv = divs[currentIndex];
+                    currentDiv.style.display = "none";
+                    currentIndex = (currentIndex + 1) % divs.length;
+                    let nextDiv = divs[currentIndex];
+                    nextDiv.style.display = "block";
+                    let visibleDiv = getVisibleDiv();
+                    if (visibleDiv) {
+                        flexFont(visibleDiv);
+                        flexFontAuthor(visibleDiv);
+                    }
+                }, 3000);
+
+                window.addEventListener("DOMContentLoaded", function () {
+                    let visibleDiv = getVisibleDiv();
+                    if (visibleDiv) {
+                        flexFont(visibleDiv);
+                        flexFontAuthor(visibleDiv);
+                    }
+                });
+
+                window.addEventListener("load", function () {
+                    let visibleDiv = getVisibleDiv();
+                    if (visibleDiv) {
+                        flexFont(visibleDiv);
+                        flexFontAuthor(visibleDiv);
+                    }
+                });
+
+                window.addEventListener("resize", function () {
+                    let visibleDiv = getVisibleDiv();
+                    if (visibleDiv) {
+                        flexFont(visibleDiv);
+                        flexFontAuthor(visibleDiv);
+                    }
+                });
+            }
+            scriptForFlexFont();
+        </script>
+
+        <!-- AOS Initializing script -->
+
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+
+        <!-- Ends -->
+
+        <!-- Custom Domain -->
+
+        <script>
+            var delay = 2000;
+
+            function toggleStrikethrough() {
+                var toggleSwitch = document.getElementById("toggle-switch");
+                var strikethroughSpan =
+                    document.getElementById("strikethrough");
+
+                if (toggleSwitch.checked) {
+                    strikethroughSpan.classList.add("strikethrough-text");
+                } else {
+                    strikethroughSpan.classList.remove("strikethrough-text");
+                }
+            }
+
+            function turnOnToggleSwitch() {
+                document.getElementById("toggle-switch").checked = true;
+                toggleStrikethrough();
+            }
+
+            // Usage
+            useIntersectionObserver(".custom-domain-work", () => {
+                setTimeout(turnOnToggleSwitch, delay);
+            });
+
+            document
+                .getElementById("toggle-switch")
+                .addEventListener("change", toggleStrikethrough);
+        </script>
+
+        <!-- Revenue count -->
+
+        <script>
+            // Set the maximum value for the counter
+            const maxValue = 30250;
+
+            // Get the <h2> element by its ID
+            const counterElement = document.getElementById("revenuecount");
+
+            // Function to update the counter value
+            function updateCounterValue(value) {
+                counterElement.textContent = `₹${value}`;
+            }
+
+            // Function to start the counter
+            function startCounter() {
+                let count = 0;
+                const intervalId = setInterval(() => {
+                    count += 550;
+                    if (count > maxValue) {
+                        count = maxValue;
+                        clearInterval(intervalId);
+                    }
+                    updateCounterValue(count);
+                }, 50); // Update the counter every 50 milliseconds (adjust as needed)
+            }
+
+            // Usage
+            useIntersectionObserver(".revenue-section", startCounter);
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const arrow = document.querySelector(".scroll-down");
+
+                // Hide the arrow initially and then make it visible after 4 seconds
+                arrow.style.opacity = "0";
+                setTimeout(() => {
+                    arrow.style.opacity = "1";
+                }, 4000);
+
+                window.addEventListener("scroll", () => {
+                    arrow.style.opacity =
+                        window.scrollY > window.innerHeight / 2 ? "0" : "1";
+                });
+            });
+        </script>
+
+        <!-- SCRIPT FILES ENDS HERE -->
+    </body>
+</html>

@@ -5,7 +5,7 @@
 
 .homepage-container {
     @include Lato();
-    height: calc(100dvh - 80px);
+    height: auto;
     margin-top: 80px;
     position: relative;
 }
@@ -48,6 +48,7 @@
 }
 
 .hero-section {
+    height: calc(100dvh - 80px);
     .hero-section-wrapper {
         display: flex;
         align-items: center;
