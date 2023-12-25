@@ -1,0 +1,112 @@
+.daily-ui-section {
+    padding: 150px 0 50px;
+    box-sizing: border-box;
+    background-color: $gray-100;
+    position: relative;
+    @include screen(mobile) {
+        padding: 120px 0 50px;
+        margin-top: 50px;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/svg/seperator-lines.svg");
+        background-color: $gray-100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100dvw;
+        height: 185px;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        @include screen(mobile) {
+            background-position: left;
+        }
+    }
+}
+.daily-ui-section-wrapper {
+    // max-width: 1200px;
+    margin: 0 auto;
+}
+
+.daily-ui-container {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: scroll;
+}
+.daily-ui-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    h5 {
+        @include Poppins();
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.14px;
+        font-weight: 600;
+        @include screen(mobile) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    h1 {
+        @include Serif();
+        font-size: 32px;
+        line-height: 46px;
+        max-width: 550px;
+        @include screen(mobile) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+.daily-ui {
+    display: flex;
+    flex-basis: 21%;
+    min-width: 21%;
+    @include screen(mobile) {
+        flex-basis: initial;
+        min-width: 80%;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    picture {
+        display: block;
+        border: 2px solid rgba($black, 0.15);
+        padding: 16px;
+        border-radius: 22px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            border-color: transparent;
+            box-shadow: 0 10px 20px 5px $gray, 0 -5px 10px 1px $gray;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    figcaption {
+        @include Poppins();
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 400;
+        color: rgba($black, 0.7);
+        padding: 0 10px;
+    }
+}

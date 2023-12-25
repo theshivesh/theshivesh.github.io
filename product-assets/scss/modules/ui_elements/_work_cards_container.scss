@@ -1,0 +1,162 @@
+.work-cards-section {
+    padding: 150px 30px 50px;
+    box-sizing: border-box;
+    background-color: #fcf9f6;
+    position: relative;
+    @include screen(mobile) {
+        padding: 120px 30px 50px;
+        margin-top: 50px;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/svg/seperator-lines.svg");
+        background-color: #fcf9f6;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100dvw;
+        height: 185px;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        @include screen(mobile) {
+            background-position: left;
+        }
+    }
+}
+.work-cards-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.work-cards-container {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: initial;
+    gap: 30px;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+}
+.work-cards-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    h5 {
+        @include Poppins();
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.14px;
+        font-weight: 600;
+        @include screen(mobile) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    h1 {
+        @include Serif();
+        font-size: 32px;
+        line-height: 46px;
+        max-width: 550px;
+        @include screen(mobile) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+.work-card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 25px;
+}
+.work-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-basis: 31%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    border: 1px solid #f5ede3;
+    background-color: $white;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        padding: 20px;
+        border-color: transparent;
+        box-shadow: 0 10px 20px 5px $gray, 0 -5px 10px 1px $gray;
+    }
+    @include screen(mobile) {
+        flex-basis: initial;
+    }
+    .work-card-preview {
+        img {
+            border-radius: 22px;
+            max-height: 250px;
+            width: 100%;
+        }
+    }
+    .work-card-content {
+        @include Poppins();
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        @include screen(mobile) {
+            align-items: initial;
+        }
+        .work-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 34px;
+            @include screen(mobile) {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 32px;
+            }
+        }
+        .work-card-description {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 300;
+            color: rgba($black, 0.6);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            word-break: break-word;
+            @include screen(mobile) {
+                font-size: 15px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+.work-card-buttons-holder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    @include screen(mobile) {
+        flex-direction: column;
+    }
+    a {
+        width: 100%;
+    }
+}
+.button {
+    min-width: 270px;
+    width: 100%;
+}

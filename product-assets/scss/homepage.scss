@@ -1,6 +1,7 @@
 @import "./modules/common/mixin.scss";
 
 @import "./modules/selected_work_modules/selected_work_base";
+@import "./modules/daily_ui_section";
 
 .homepage-container {
     @include Lato();
@@ -56,6 +57,32 @@
         gap: 50px;
         height: 100%;
         position: relative;
+        .scroll-down {
+            border: 2px solid rgba($black, 0.65);
+            border-radius: 20px;
+            bottom: 60px;
+            height: 43px;
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            width: 25px;
+            transition: opacity 0.5s ease;
+            &::before {
+                -webkit-animation: scrollDownAnimation 2s infinite;
+                animation: scrollDownAnimation 2s infinite;
+                background-color: rgba($black, 0.65);
+                border-radius: 100%;
+                content: "";
+                height: 6px;
+                left: 0;
+                margin: 0 auto;
+                position: absolute;
+                right: 0;
+                top: 10px;
+                width: 6px;
+            }
+        }
     }
     .hero-section-content,
     .hero-section-image-container {
@@ -152,5 +179,24 @@
             font-size: 18px;
             line-height: 28px;
         }
+    }
+}
+
+@keyframes scrollDownAnimation {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    100% {
+        opacity: 0;
     }
 }
