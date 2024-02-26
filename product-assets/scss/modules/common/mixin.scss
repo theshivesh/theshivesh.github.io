@@ -7,6 +7,7 @@ $blue: #1f63d6;
 // Dark mode specific
 
 $yellow: #ffa012;
+$yellow-100: #fdf3a3;
 $medium-orange: #d2934e;
 $green: #168039;
 $dark-bg: #121212;
@@ -37,6 +38,9 @@ $instagram-color: #e1306c;
 }
 @mixin Serif() {
     font-family: "DM Serif Display", serif;
+}
+@mixin IBMSerif() {
+    font-family: "IBM Plex Serif", serif;
 }
 
 // Media Query Handler

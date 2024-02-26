@@ -1,0 +1,66 @@
+article {
+    .article-body {
+        .article-body-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-body-content-wrapper {
+            margin: 64px 0;
+            @include screen(mobile) {
+                margin: 32px 0;
+                padding: 0 30px;
+                box-sizing: border-box;
+            }
+        }
+        h2,
+        p,
+        ul,
+        ol {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        h2 {
+            @include Serif();
+            font-size: 24px;
+            line-height: 140%;
+            margin-bottom: 16px;
+            @include screen(tablet) {
+                font-size: 20px;
+            }
+        }
+        p {
+            @include IBMSerif();
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            margin: 0 auto 16px;
+            @include screen(tablet) {
+                font-size: 16px;
+            }
+            &.highlighted-text-note {
+                @include Poppins();
+            }
+        }
+        figure {
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 32px;
+                object-fit: cover;
+                @include screen(tablet) {
+                    border-radius: 0;
+                }
+            }
+            figcaption {
+                @include Raleway();
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                margin: 10px 0;
+                color: rgba($black, 0.7);
+                text-align: center;
+            }
+        }
+    }
+}

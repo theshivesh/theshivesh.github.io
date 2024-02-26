@@ -1,0 +1,49 @@
+.more-projects-swipe-cards {
+    overflow: hidden;
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: flex-start;
+        padding: 0 30px 30px;
+        overflow-x: scroll;
+        li {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+        figure {
+            img {
+                width: 300px;
+                height: 300px;
+                min-width: 300px;
+                border-radius: 8px;
+                @include screen(tablet) {
+                    width: 250px;
+                    height: 250px;
+                    min-width: 250px;
+                }
+            }
+        }
+        h3,
+        p {
+            @include Poppins();
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+            margin: 16px 0 8px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            color: rgba($black, 0.7);
+        }
+    }
+}

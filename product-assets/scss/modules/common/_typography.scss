@@ -7,3 +7,42 @@
         color: $yellow;
     }
 }
+
+ul {
+    &.has-unordered-list {
+        list-style: disc;
+        margin: 25px auto;
+        padding-left: 30px;
+        li {
+            margin-bottom: 16px;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+ol {
+    list-style: circle;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.highlighted-text-note {
+    @include Raleway();
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 8px;
+    background-color: $yellow-100;
+}

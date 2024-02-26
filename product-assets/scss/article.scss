@@ -1,0 +1,10 @@
+@import "./modules/common/mixin.scss";
+
+@import "./modules/article_modules/article_header";
+@import "./modules/article_modules/article_body";
+@import "./modules/article_modules/article_column_layout";
+
+.main-container {
+    padding: 80px 0 50px;
+    box-sizing: border-box;
+}

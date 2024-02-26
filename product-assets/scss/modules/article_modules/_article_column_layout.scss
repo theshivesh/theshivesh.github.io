@@ -1,0 +1,39 @@
+article {
+    .column-layout {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 50px;
+        margin: 65px auto;
+        @include screen(tablet) {
+            flex-direction: column;
+            padding: 0 30px;
+            margin: 32px auto;
+            gap: 16px;
+        }
+        .col {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex: 1;
+            img {
+                @include screen(tablet) {
+                    border-radius: 8px;
+                }
+            }
+            &.col-info-block {
+                flex-direction: column;
+                gap: 25px;
+                p {
+                    margin: 0 0 16px;
+                }
+                @include screen(tablet) {
+                    gap: 16px;
+                }
+            }
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}
