@@ -1,0 +1,31 @@
+.dark-mode {
+    article {
+        .article-body {
+            .article-body-container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .article-body-content-wrapper {
+                margin: 64px 0;
+                @include screen(mobile) {
+                    margin: 32px 0;
+                    padding: 0 30px;
+                    box-sizing: border-box;
+                }
+            }
+            h2,
+            p,
+            ul,
+            ol {
+                color: $dark-text;
+            }
+
+            figure {
+                figcaption {
+                    color: rgba($white, 0.7);
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,11 @@
 @import "./dark_mode_modules/dm_daily_ui_section";
 @import "./dark_mode_modules/dm_footer";
 @import "./dark_mode_modules/dm_selected_work_base";
+@import "./dark_mode_modules/dm_more_projects_swipe_cards";
+
+// Article page main embed
+
+@import "./dark_mode_modules/dm_article";
 
 body {
     &.dark-mode {
@@ -37,6 +42,9 @@ body {
             &.yellow-highlighted-text {
                 color: $yellow;
             }
+        }
+        .highlighted-text-note {
+            color: $dark-highlight;
         }
     }
 }

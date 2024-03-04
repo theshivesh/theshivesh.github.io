@@ -1,0 +1,38 @@
+.dark-mode {
+    article {
+        .article-header-content {
+            .article-header-title,
+            .article-header-description {
+                color: $dark-text;
+            }
+
+            .article-header-description {
+                color: rgba($dark-text, 0.8);
+            }
+            .article-header-mini-info-container {
+                li {
+                    border-right: 1px solid $dark-line;
+                    &:last-of-type {
+                        border: none;
+                    }
+                    @include screen(mobile) {
+                        gap: 8px;
+                        border: none;
+                    }
+                }
+                h3,
+                p {
+                    color: $dark-text;
+                }
+            }
+        }
+
+        .article-header-image {
+            figure {
+                figcaption {
+                    color: rgba($white, 0.7);
+                }
+            }
+        }
+    }
+}

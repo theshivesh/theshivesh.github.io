@@ -1,0 +1,16 @@
+.dark-mode {
+    .more-projects-swipe-cards {
+        ul {
+            a {
+                color: $dark-link;
+            }
+
+            h3 {
+                color: $dark-text;
+            }
+            p {
+                color: rgba($white, 0.7);
+            }
+        }
+    }
+}
