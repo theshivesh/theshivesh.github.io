@@ -3,6 +3,7 @@
     background-color: $white;
     width: 100%;
     margin: 0;
+    overflow: hidden;
     .footer-wrapper {
         display: flex;
         align-items: center;
@@ -13,11 +14,18 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 25px;
+        @include screen(mobile) {
+            flex-direction: column;
+            padding: 0 30px 30px;
+        }
     }
     .footer-left {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @include screen(mobile) {
+            text-align: center;
+        }
         a {
             font-family: "Poppins", sans-serif;
             font-size: 18px;

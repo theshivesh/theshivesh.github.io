@@ -39,6 +39,9 @@
     gap: 30px;
     overflow-x: scroll;
     flex-wrap: wrap;
+    @include screen(mobile) {
+        padding: 0;
+    }
 }
 .work-cards-section-header {
     display: flex;
@@ -98,6 +101,7 @@
     }
     @include screen(mobile) {
         flex-basis: initial;
+        margin: 0;
     }
     .work-card-preview {
         img {
