@@ -20,6 +20,8 @@ $dark-text: #f1f1f1;
 $dark-highlight: #0e0e0f;
 $dark-line: #363636;
 
+$paper-100: #ede7d8;
+
 // Brand colors
 
 $linkedin-color: #0a66c2;
@@ -42,6 +44,9 @@ $instagram-color: #e1306c;
 }
 @mixin IBMSerif() {
     font-family: "IBM Plex Serif", serif;
+}
+@mixin Sans() {
+    font-family: "Noto Sans", sans-serif;
 }
 
 // Media Query Handler
@@ -76,6 +81,12 @@ $breakpoint-desktop: $breakpoint-tablet + 1px;
             @content;
         }
     } @else {
+        @content;
+    }
+}
+
+@mixin dark-mode {
+    body.dark-mode & {
         @content;
     }
 }

@@ -13,12 +13,13 @@
 @import "./modules/ui_elements/work_cards_container";
 @import "./modules/ui_elements/toggle_switch";
 @import "./modules/ui_elements/progress_bar";
+@import "./modules/ui_elements/image_modal";
 
 @import "./modules/footer";
 
 html {
-    cursor: none;
-    user-select: none;
+    // cursor: none;
+    // user-select: none;
 }
 
 body {
@@ -37,9 +38,15 @@ body {
     }
 }
 
+img {
+    &.zoom-image {
+        cursor: pointer;
+    }
+}
+
 a {
     color: $black;
-    cursor: none;
+    // cursor: none;
     transition: 0.3s;
     text-decoration: none;
     &.highlighted-link {

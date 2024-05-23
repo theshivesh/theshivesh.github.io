@@ -2,7 +2,7 @@ article {
     .article-body {
         .article-body-container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 64px auto;
         }
 
         .article-body-content-wrapper {
@@ -23,7 +23,7 @@ article {
         h2 {
             @include Serif();
             font-size: 24px;
-            line-height: 140%;
+            line-height: 36px;
             margin-bottom: 16px;
             @include screen(tablet) {
                 font-size: 20px;
@@ -31,15 +31,19 @@ article {
         }
         p {
             @include IBMSerif();
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 400;
-            line-height: 150%;
+            line-height: 31px;
             margin: 0 auto 16px;
+            letter-spacing: 0.099px;
             @include screen(tablet) {
                 font-size: 16px;
             }
             &.highlighted-text-note {
                 @include Poppins();
+            }
+            &.semi-bold {
+                font-weight: 600;
             }
         }
         figure {
@@ -60,6 +64,68 @@ article {
                 margin: 10px 0;
                 color: rgba($black, 0.7);
                 text-align: center;
+            }
+        }
+        .article-body-has-results {
+            background-color: rgba($paper-100, 0.4);
+            @include dark-mode {
+                background-color: $dark-highlight;
+            }
+            .article-body-results-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 100px 30px;
+                box-sizing: border-box;
+                .article-body-content-wrapper {
+                    margin: 0;
+                }
+                .screen-block {
+                    figure {
+                        margin: 64px auto;
+                    }
+                }
+                .article-body-results-header-wrapper {
+                    margin-bottom: 64px;
+                }
+                h2,
+                p {
+                    @include Poppins();
+                    max-width: 880px;
+                    margin: 0 auto;
+                    @include dark-mode {
+                        color: $dark-text;
+                    }
+                }
+                h2 {
+                    font-weight: 600;
+                }
+                p {
+                    margin: 20px auto;
+                    &.highlighted-text-note {
+                        @include dark-mode {
+                            color: $dark-highlight;
+                        }
+                    }
+                }
+                .article-body-results-title,
+                .article-body-results-description {
+                    @include Poppins();
+                    max-width: 1020px;
+                    margin: 0 auto;
+                }
+                .article-body-results-title {
+                    font-size: 58px;
+                    line-height: 72px;
+                    font-weight: 600;
+                    margin-bottom: 16px;
+                    letter-spacing: 0.5px;
+                    @include dark-mode {
+                        color: $white;
+                    }
+                }
+                .article-body-results-description {
+                    opacity: 0.9;
+                }
             }
         }
     }

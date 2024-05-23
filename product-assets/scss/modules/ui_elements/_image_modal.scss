@@ -1,0 +1,70 @@
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal content */
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-height: 75dvh;
+    animation: zoomIn 0.3s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 16px;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Image inside modal */
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Close button */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}

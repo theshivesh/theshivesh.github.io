@@ -1,11 +1,14 @@
 .daily-ui-section {
-    padding: 150px 0 50px;
+    padding: 250px 0 50px;
     box-sizing: border-box;
     background-color: $gray-100;
     position: relative;
     @include screen(mobile) {
         padding: 120px 0 50px;
         margin-top: 50px;
+    }
+    @include screen("custom", "min", "1441") {
+        padding-top: 250px;
     }
     &::before {
         content: "";
@@ -16,18 +19,26 @@
         background-position: center;
         background-size: cover;
         width: 100dvw;
-        height: 185px;
+        height: 255px;
         position: absolute;
         top: -70px;
         left: 0;
         @include screen(mobile) {
             background-position: left;
+            height: 185px;
+        }
+        @include screen("custom", "min", "1441") {
+            height: 255px;
         }
     }
 }
 .daily-ui-section-wrapper {
-    // max-width: 1200px;
     margin: 0 auto;
+    a,
+    .button {
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
 
 .daily-ui-container {
@@ -36,8 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     overflow-x: scroll;
+    @include screen(tablet) {
+        justify-content: flex-start;
+    }
+    @include screen(mobile) {
+        justify-content: flex-start;
+    }
 }
 .daily-ui-section-header {
     display: flex;
@@ -48,6 +65,9 @@
     gap: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    @include screen(mobile) {
+        padding: 0 30px;
+    }
     h5 {
         @include Poppins();
         font-size: 16px;
@@ -55,6 +75,7 @@
         text-transform: uppercase;
         letter-spacing: 1.14px;
         font-weight: 600;
+        color: #888;
         @include screen(mobile) {
             font-size: 14px;
             line-height: 22px;
@@ -73,10 +94,13 @@
 }
 .daily-ui {
     display: flex;
-
+    flex-basis: 16%;
+    @include screen(tablet) {
+        min-width: 33%;
+    }
     @include screen(mobile) {
         flex-basis: initial;
-        min-width: 80%;
+        min-width: 70%;
     }
     figure {
         display: flex;
@@ -86,9 +110,12 @@
     picture {
         display: block;
         border: 2px solid rgba($black, 0.15);
-        padding: 16px;
+        padding: 8px;
         border-radius: 22px;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        @include screen(tablet) {
+            padding: 6px;
+        }
         &:hover {
             border-color: transparent;
             box-shadow: 0 10px 20px 5px $gray, 0 -5px 10px 1px $gray;
@@ -99,7 +126,10 @@
         height: auto;
         object-fit: cover;
         border-radius: 12px;
-        max-height: 460px;
+
+        @include screen(desktop) {
+            max-height: initial;
+        }
     }
     figcaption {
         @include Poppins();
@@ -108,5 +138,6 @@
         font-weight: 400;
         color: rgba($black, 0.7);
         padding: 0 10px;
+        min-height: 40px;
     }
 }

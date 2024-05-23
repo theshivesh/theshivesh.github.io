@@ -7,6 +7,9 @@
         padding: 120px 30px 50px;
         margin-top: 50px;
     }
+    @include screen("custom", "min", "1441") {
+        padding-top: 250px;
+    }
     &::before {
         content: "";
         display: inline-block;
@@ -22,6 +25,9 @@
         left: 0;
         @include screen(mobile) {
             background-position: left;
+        }
+        @include screen("custom", "min", "1441") {
+            height: 255px;
         }
     }
 }
@@ -39,6 +45,11 @@
     gap: 30px;
     overflow-x: scroll;
     flex-wrap: wrap;
+    @include screen(tablet) {
+        justify-content: center;
+        padding: 50px 0;
+        gap: 20px;
+    }
     @include screen(mobile) {
         padding: 0;
     }
@@ -57,6 +68,7 @@
         text-transform: uppercase;
         letter-spacing: 1.14px;
         font-weight: 600;
+        color: #bf7641;
         @include screen(mobile) {
             font-size: 14px;
             line-height: 22px;
@@ -93,11 +105,15 @@
     border-radius: 28px;
     border: 1px solid #f5ede3;
     background-color: $white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
     &:hover {
         padding: 20px;
         border-color: transparent;
-        box-shadow: 0 10px 20px 5px $gray, 0 -5px 10px 1px $gray;
+        box-shadow: 0 10px 20px 5px #faf2ea, 0 -5px 10px 1px #faf2ea;
+    }
+    @include screen(tablet) {
+        margin: 0;
+        flex-basis: 48%;
     }
     @include screen(mobile) {
         flex-basis: initial;

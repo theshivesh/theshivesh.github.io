@@ -1,6 +1,7 @@
 article {
     .article-header-container {
-        margin: 64px auto;
+        margin: 150px auto 64px;
+        max-width: 1200px;
     }
 
     .article-header-content {
@@ -11,16 +12,15 @@ article {
         .article-header-title,
         .article-header-description {
             max-width: 810px;
-            margin: 0 auto;
-            text-align: center;
+
             @include screen(only-tablet) {
                 max-width: 640px;
             }
         }
         .article-header-title {
             @include Serif();
-            font-size: 68px;
-            line-height: 120%;
+            font-size: 58px;
+            line-height: 72px;
             @include screen(tablet) {
                 font-size: 42px;
             }
@@ -32,77 +32,24 @@ article {
         .article-header-description {
             @include IBMSerif();
             font-size: 20px;
-            line-height: 150%;
-            margin: 30px auto;
+            line-height: 34px;
+            margin: 20px 0 30px;
             font-weight: 400;
+            opacity: 0.6;
             @include screen(tablet) {
                 margin: 25px auto;
                 font-size: 18px;
-            }
-        }
-        .article-header-mini-info-container {
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                padding: 25px 0 0;
-                max-width: 1024px;
-                margin: 0 auto;
-                @include screen(only-tablet) {
-                    padding: 0;
-                    justify-content: flex-start;
-                }
-                @include screen(mobile) {
-                    border-top: 1px solid $gray;
-                    flex-direction: column;
-                    gap: 22px;
-                }
-            }
-            li {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 16px;
-                flex: 1;
-                border-right: 1px solid $gray;
-                &:last-of-type {
-                    border: none;
-                }
-                @include screen(mobile) {
-                    gap: 8px;
-                    border: none;
-                }
-            }
-            h3 {
-                @include Serif();
-                font-size: 24px;
-                line-height: 140%;
-                @include screen(tablet) {
-                    font-size: 20px;
-                }
-            }
-            p {
-                @include IBMSerif();
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 400;
-                @include screen(tablet) {
-                    font-size: 16px;
-                }
             }
         }
     }
 
     .article-header-image {
         figure {
-            margin: 64px 0;
+            margin: 64px auto;
             img {
                 width: 100%;
                 height: auto;
                 object-fit: cover;
-                max-height: 576px;
             }
             figcaption {
                 @include Raleway();
@@ -112,6 +59,69 @@ article {
                 margin: 10px 0;
                 color: rgba($black, 0.7);
                 text-align: center;
+            }
+        }
+    }
+    .article-header-mini-info-container {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 100%;
+            gap: 22px;
+
+            margin: 0 auto;
+            @include screen(only-tablet) {
+                padding: 0;
+                justify-content: flex-start;
+            }
+            @include screen(mobile) {
+                border-top: 1px solid $gray;
+                flex-direction: column;
+                gap: 22px;
+            }
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: $gray-100;
+            border-radius: 22px;
+            padding: 30px;
+            box-sizing: border-box;
+            gap: 8px;
+            flex: 1;
+            @include dark-mode {
+                background-color: $dark-card-600;
+            }
+            @include screen(mobile) {
+                border: none;
+            }
+        }
+        h3 {
+            @include Sans();
+            font-size: 22px;
+            line-height: 35px;
+            font-weight: 600;
+            @include screen(tablet) {
+                font-size: 20px;
+            }
+            @include dark-mode {
+                color: $dark-text;
+            }
+        }
+        p {
+            @include Sans();
+            font-size: 20px;
+            line-height: 31px;
+            font-weight: 400;
+            color: rgba($black, 0.7);
+            @include screen(tablet) {
+                font-size: 16px;
+            }
+            @include dark-mode {
+                color: rgba($dark-text, 0.7);
             }
         }
     }

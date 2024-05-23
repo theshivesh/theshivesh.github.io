@@ -21,7 +21,7 @@
                 .scrollstack-cards {
                     .card {
                         background: lighten($dark-highlight, 4%);
-                        border: lighten($dark-highlight, 4%);
+                        border-color: lighten($dark-highlight, 8%);
                         box-shadow: 0 10px 10px 1px rgba(#302d37, 0.1);
                     }
 

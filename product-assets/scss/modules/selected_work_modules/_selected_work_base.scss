@@ -24,6 +24,10 @@
     // &.is-highlighted-yellow {
     //     background-color: rgba($yellow, 0.04);
     // }
+    @include screen(tablet) {
+        padding: 100px 30px;
+        height: auto;
+    }
     @include screen(mobile) {
         padding: 75px 30px;
         height: initial;
@@ -39,6 +43,7 @@
     max-width: 1200px;
     margin: 0 auto;
     @include screen(tablet) {
+        gap: 120px;
         height: initial;
         flex-direction: column;
     }

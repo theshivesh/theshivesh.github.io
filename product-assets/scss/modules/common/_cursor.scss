@@ -1,28 +1,28 @@
-.custom-cursor {
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    width: 50px;
-    margin-left: -25px;
-    margin-top: -25px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: white;
-    transition-property: transform, scale, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-    scale: 0.5;
-    z-index: 10;
-    @include screen(tablet) {
-        display: none;
-    }
-}
-.custom-cursor--link {
-    scale: 1;
-}
-.custom-cursor--init {
-    opacity: 1;
-}
+// .custom-cursor {
+//     position: fixed;
+//     opacity: 0;
+//     top: 0;
+//     left: 0;
+//     pointer-events: none;
+//     mix-blend-mode: difference;
+//     width: 50px;
+//     margin-left: -25px;
+//     margin-top: -25px;
+//     aspect-ratio: 1;
+//     border-radius: 50%;
+//     background-color: white;
+//     transition-property: transform, scale, opacity;
+//     transition-duration: 250ms;
+//     transition-timing-function: ease-in-out;
+//     scale: 0.5;
+//     z-index: 10;
+//     @include screen(tablet) {
+//         display: none;
+//     }
+// }
+// .custom-cursor--link {
+//     scale: 1;
+// }
+// .custom-cursor--init {
+//     opacity: 1;
+// }

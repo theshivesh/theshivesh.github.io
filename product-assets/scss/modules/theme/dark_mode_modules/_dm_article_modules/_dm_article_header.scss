@@ -7,7 +7,8 @@
             }
 
             .article-header-description {
-                color: rgba($dark-text, 0.8);
+                color: $dark-text;
+                opacity: 0.9;
             }
             .article-header-mini-info-container {
                 li {
