@@ -2,13 +2,14 @@ article {
     .article-header-container {
         margin: 150px auto 64px;
         max-width: 1200px;
-    }
-
-    .article-header-content {
         @include screen(tablet) {
+            margin: 64px auto;
             padding: 0 30px;
             box-sizing: border-box;
         }
+    }
+
+    .article-header-content {
         .article-header-title,
         .article-header-description {
             max-width: 810px;
@@ -25,7 +26,7 @@ article {
                 font-size: 42px;
             }
             @include screen(mobile) {
-                font-size: 28px;
+                font-size: 38px;
                 line-height: 140%;
             }
         }
@@ -37,8 +38,8 @@ article {
             font-weight: 400;
             opacity: 0.6;
             @include screen(tablet) {
-                margin: 25px auto;
                 font-size: 18px;
+                margin-top: 8px;
             }
         }
     }
@@ -69,7 +70,6 @@ article {
             align-items: stretch;
             width: 100%;
             gap: 22px;
-
             margin: 0 auto;
             @include screen(only-tablet) {
                 padding: 0;
@@ -95,6 +95,9 @@ article {
             @include dark-mode {
                 background-color: $dark-card-600;
             }
+            @include screen(tablet) {
+                padding: 20px;
+            }
             @include screen(mobile) {
                 border: none;
             }
@@ -106,6 +109,10 @@ article {
             font-weight: 600;
             @include screen(tablet) {
                 font-size: 20px;
+            }
+            @include screen(mobile) {
+                font-size: 18px;
+                line-height: 30px;
             }
             @include dark-mode {
                 color: $dark-text;
@@ -119,6 +126,7 @@ article {
             color: rgba($black, 0.7);
             @include screen(tablet) {
                 font-size: 16px;
+                line-height: 28px;
             }
             @include dark-mode {
                 color: rgba($dark-text, 0.7);

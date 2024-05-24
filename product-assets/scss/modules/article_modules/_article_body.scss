@@ -3,13 +3,16 @@ article {
         .article-body-container {
             max-width: 1200px;
             margin: 64px auto;
+            @include screen(tablet) {
+                padding: 0 30px;
+                box-sizing: border-box;
+            }
         }
 
         .article-body-content-wrapper {
             margin: 64px 0;
             @include screen(mobile) {
                 margin: 32px 0;
-                padding: 0 30px;
                 box-sizing: border-box;
             }
         }
@@ -26,7 +29,8 @@ article {
             line-height: 36px;
             margin-bottom: 16px;
             @include screen(tablet) {
-                font-size: 20px;
+                font-size: 22px;
+                margin: 0 0 8px;
             }
         }
         p {
@@ -37,7 +41,9 @@ article {
             margin: 0 auto 16px;
             letter-spacing: 0.099px;
             @include screen(tablet) {
-                font-size: 16px;
+                font-size: 18px;
+                line-height: 30px;
+                margin: 0 0 16px;
             }
             &.highlighted-text-note {
                 @include Poppins();
@@ -76,6 +82,9 @@ article {
                 margin: 0 auto;
                 padding: 100px 30px;
                 box-sizing: border-box;
+                @include screen(mobile) {
+                    padding: 64px 30px;
+                }
                 .article-body-content-wrapper {
                     margin: 0;
                 }
@@ -119,6 +128,10 @@ article {
                     font-weight: 600;
                     margin-bottom: 16px;
                     letter-spacing: 0.5px;
+                    @include screen(mobile) {
+                        font-size: 38px;
+                        line-height: 51px;
+                    }
                     @include dark-mode {
                         color: $white;
                     }
