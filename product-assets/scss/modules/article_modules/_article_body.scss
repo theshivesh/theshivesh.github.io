@@ -74,6 +74,9 @@ article {
         }
         .article-body-has-results {
             background-color: rgba($paper-100, 0.4);
+            @include screen(desktop) {
+                margin-top: 64px;
+            }
             @include dark-mode {
                 background-color: $dark-highlight;
             }
