@@ -74,6 +74,12 @@ article {
         }
         .article-body-has-results {
             background-color: rgba($paper-100, 0.4);
+            &.old-designs {
+                background-color: $gray;
+                @include dark-mode {
+                    background-color: $dark-bg;
+                }
+            }
             @include screen(desktop) {
                 margin-top: 64px;
             }
