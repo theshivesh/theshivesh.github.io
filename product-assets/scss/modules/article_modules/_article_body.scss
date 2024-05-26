@@ -23,6 +23,10 @@ article {
             @include dark-mode {
                 color: $white;
             }
+            @include screen(mobile) {
+                font-size: 32px;
+                line-height: 140%;
+            }
         }
         a {
             text-decoration: underline;
@@ -30,6 +34,20 @@ article {
         figure {
             max-width: 680px;
             margin: 64px auto;
+            img {
+                @include screen(mobile) {
+                    border-radius: 8px;
+                }
+            }
+        }
+        .article-body {
+            figure {
+                img {
+                    @include screen(mobile) {
+                        border-radius: 16px;
+                    }
+                }
+            }
         }
     }
     .article-body {
