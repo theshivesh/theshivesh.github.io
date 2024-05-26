@@ -1,4 +1,11 @@
 article {
+    &.headlines-article {
+        .article-header-image {
+            figure {
+                max-width: 880px;
+            }
+        }
+    }
     .article-header-container {
         margin: 150px auto 64px;
         max-width: 1200px;
