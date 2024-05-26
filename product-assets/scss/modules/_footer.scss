@@ -16,7 +16,7 @@
         padding: 25px;
         @include screen(mobile) {
             flex-direction: column;
-            padding: 0 30px 30px;
+            padding: 30px;
         }
     }
     .footer-left {

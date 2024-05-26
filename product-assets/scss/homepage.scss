@@ -93,7 +93,7 @@
     }
     .hero-section-content {
         @include screen(mobile) {
-            padding: 0 30px;
+            padding: 0;
             box-sizing: border-box;
         }
         .hero-section-title {
