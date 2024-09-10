@@ -75,32 +75,27 @@ article {
             margin: 0 auto;
         }
         h2 {
-            @include Serif();
-            font-size: 24px;
-            line-height: 36px;
+            @include Opensans();
+            font-size: 22px;
+            line-height: 35px;
             margin-bottom: 16px;
+            font-weight: 700;
             @include screen(tablet) {
                 font-size: 22px;
                 margin: 0 0 8px;
             }
         }
         p {
-            @include IBMSerif();
-            font-size: 20px;
+            @include Opensans();
+            font-size: 16px;
             font-weight: 400;
-            line-height: 31px;
+            line-height: 25px;
             margin: 0 auto 16px;
-            letter-spacing: 0.099px;
-            @include screen(tablet) {
-                font-size: 18px;
-                line-height: 30px;
-                margin: 0 0 16px;
-            }
             &.highlighted-text-note {
                 @include Poppins();
             }
             &.semi-bold {
-                font-weight: 600;
+                font-weight: 500;
             }
         }
         figure {

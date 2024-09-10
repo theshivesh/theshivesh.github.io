@@ -48,6 +48,9 @@ $instagram-color: #e1306c;
 @mixin Sans() {
     font-family: "Noto Sans", sans-serif;
 }
+@mixin Opensans() {
+    font-family: "Open Sans", sans-serif;
+}
 
 // Media Query Handler
 

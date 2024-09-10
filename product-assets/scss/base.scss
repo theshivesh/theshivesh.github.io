@@ -1,7 +1,7 @@
 @import "./modules/common/mixin";
 @import "./modules/common/_browser_reset";
 @import "./modules/common/main_navigation";
-@import "./modules/common/cursor";
+// @import "./modules/common/cursor";
 @import "./modules/common/typography";
 @import "./modules/common/common_styles";
 @import "./modules/common/animations";
@@ -18,8 +18,8 @@
 @import "./modules/footer";
 
 html {
-    cursor: none;
-    user-select: none;
+    // cursor: none;
+    // user-select: none;
 }
 
 body {
