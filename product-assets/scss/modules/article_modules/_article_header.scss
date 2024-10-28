@@ -38,14 +38,13 @@ article {
             }
         }
         .article-header-description {
-            @include IBMSerif();
-            font-size: 20px;
-            line-height: 34px;
+            @include Opensans();
+            font-size: 18px;
+            line-height: 29px;
             margin: 20px 0 30px;
             font-weight: 400;
-            opacity: 0.6;
+            opacity: 0.7;
             @include screen(tablet) {
-                font-size: 18px;
                 margin-top: 8px;
             }
         }
@@ -110,31 +109,20 @@ article {
             }
         }
         h3 {
-            @include Sans();
-            font-size: 22px;
-            line-height: 35px;
+            @include Opensans();
+            font-size: 18px;
+            line-height: 28px;
             font-weight: 600;
-            @include screen(tablet) {
-                font-size: 20px;
-            }
-            @include screen(mobile) {
-                font-size: 18px;
-                line-height: 30px;
-            }
             @include dark-mode {
                 color: $dark-text;
             }
         }
         p {
-            @include Sans();
-            font-size: 20px;
-            line-height: 31px;
+            @include Opensans();
+            font-size: 16px;
+            line-height: 27px;
             font-weight: 400;
             color: rgba($black, 0.7);
-            @include screen(tablet) {
-                font-size: 16px;
-                line-height: 28px;
-            }
             @include dark-mode {
                 color: rgba($dark-text, 0.7);
             }
