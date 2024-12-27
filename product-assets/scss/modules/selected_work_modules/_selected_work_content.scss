@@ -40,11 +40,13 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            width: 100%;
             @include screen(mobile) {
                 flex-direction: column;
             }
             a {
                 width: 100%;
+                flex: 1;
             }
         }
         .button {
